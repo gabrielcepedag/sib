@@ -6,7 +6,7 @@ WITH daily_data AS (
         ROUND(AVG(CAST(JSONExtractString(_airbyte_data, 'Close') AS Float64)), 2) AS avg_close,
         ROUND(AVG(CAST(JSONExtractString(_airbyte_data, 'Volume') AS Float64)), 2) AS avg_volume
     FROM 
-        raw.stage_raw__stream_sa_daily_stock_prices
+        dwh.dwh_raw__stream_daily_stock_prices
     GROUP BY 
         symbol, month
     ORDER BY 
