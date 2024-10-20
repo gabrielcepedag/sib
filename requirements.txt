@@ -5,3 +5,5 @@ pandas
 psycopg2-binary
 sqlalchemy
 dbt-postgres
+dbt-core
+dbt-clickhouse
