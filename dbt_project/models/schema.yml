@@ -1,5 +1,5 @@
 models:
-  - name: monthly_stock_summary
+  - name: vw_monthly_stock_summary
     columns:
       - name: symbol
         tests:

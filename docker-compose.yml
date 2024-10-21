@@ -69,6 +69,8 @@ services:
       nofile:
         soft: 262144
         hard: 262144
+    environment:
+      - DATABASE_NAME=dwh
     depends_on:
       - postgres-db
     networks:
@@ -76,8 +78,8 @@ services:
 
   redis:
     image: redis:latest
-    expose:
-      - 6379
+    ports:
+      - 6379:6379
     healthcheck:
       test: ["CMD", "redis-cli", "ping"]
       interval: 10s
@@ -85,6 +87,8 @@ services:
       retries: 50
       start_period: 30s
     restart: always
+    networks:
+      <<: *airflow-common-networks
 
   airflow-webserver:
     <<: *airflow-common
@@ -117,6 +121,8 @@ services:
       <<: *airflow-common-depends-on
       airflow-init:
         condition: service_completed_successfully
+    networks:
+      <<: *airflow-common-networks
 
   airflow-worker:
     <<: *airflow-common
