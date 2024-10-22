@@ -1,0 +1,33 @@
+version: 2
+
+models:
+  - name: dwh_daily_stocks_prices
+    description: "Tabla con los precios diarios de acciones extraídos y transformados desde Airbyte."
+    columns:
+      - name: symbol
+        description: "Simbolo de la acción."
+        tests:
+          - not_null
+          - unique
+      - name: date
+        description: "Fecha del precio de la acción."
+      - name: open
+        description: "Precio de apertura de la acción."
+      - name: high
+        description: "Precio más alto de la acción en el día."
+      - name: low
+        description: "Precio más bajo de la acción en el día."
+      - name: close
+        description: "Precio de cierre de la acción."
+      - name: volume
+        description: "Volumen de la acción negociado."
+      - name: dividends
+        description: "Dividendos distribuidos por la acción."
+      - name: stock_splits
+        description: "Fraccionamientos de acciones."
+      - name: created_at
+        description: "Fecha de creación del registro."
+      - name: updated_at
+        description: "Fecha de última actualización del registro."
+      - name: _airbyte_extracted_at
+        description: "Fecha y hora de extracción del dato por Airbyte."
