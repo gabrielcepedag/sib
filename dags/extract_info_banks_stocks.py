@@ -11,6 +11,10 @@ from extract_info_banks_stocks_tasks.extract_save_price_stock import get_price_i
 from extract_info_banks_stocks_tasks.extract_save_holders_info import get_holders_info
 from extract_info_banks_stocks_tasks.extract_save_calificadores_info import get_calificadores_info
 import os
+from airflow import DAG
+from airflow.utils.dates import days_ago
+from airflow.providers.airbyte.operators.airbyte import AirbyteTriggerSyncOperator
+
 
 host = os.getenv("DB_HOST", "postgres-db")         
 database = os.getenv("POSTGRES_DB2", "landing_zone")      
@@ -18,6 +22,7 @@ user = os.getenv("POSTGRES_USER", "sib_user")
 password = os.getenv("POSTGRES_PASSWORD", "sib_user") 
 port = os.getenv("POSTGRES_PORT", "5432")        
 ENGINE_DB = f'postgresql://{user}:{password}@{host}:{port}/{database}'
+AIRBYTE_CONN_ID=os.getenv("AIRBYTE_CONNECTION_ID", "8bf4a1bc-7071-4b67-8d55-4b5be1484508")
 
 # Definir el DAG
 with DAG(
@@ -93,4 +98,20 @@ with DAG(
         provide_context=True,
     )
 
-    extract_banks_task >> [extract_save_basic_stocks_info, extract_save_fundamentals_stocks_info, extract_save_price_stocks_info, extract_save_holders_info, extract_save_calificadores_info]
+    # Tarea 7: Ejecutar JOB de Airbyte que envia lo cargado en postgresql a clickhouse
+    send_to_datawarehouse = AirbyteTriggerSyncOperator(
+        task_id='send_to_datawarehouse',
+        airbyte_conn_id='airbyte_conn_id',
+        connection_id=AIRBYTE_CONN_ID,
+        asynchronous=False,
+        timeout=900,
+        wait_seconds=3
+    )
+
+    extract_banks_task >> [
+                        extract_save_basic_stocks_info, 
+                        extract_save_fundamentals_stocks_info,
+                        extract_save_price_stocks_info,
+                        extract_save_holders_info,
+                        extract_save_calificadores_info
+    ] >> send_to_datawarehouse

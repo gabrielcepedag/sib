@@ -7,3 +7,5 @@ sqlalchemy
 dbt-postgres
 dbt-core
 dbt-clickhouse
+apache-airflow-providers-airbyte==3.3.2
+# airbyte-api

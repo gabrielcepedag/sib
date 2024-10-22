@@ -37,7 +37,8 @@ x-airflow-common:
     redis:
       condition: service_healthy
   networks:
-    - sib_network  
+    - sib_network
+    - airbyte_airflow  
 
 services:
   postgres-db:
@@ -54,7 +55,8 @@ services:
     ports:
       - "${POSTGRES_PORT}:${POSTGRES_PORT}"  
     networks:
-      - sib_network  
+      - sib_network
+      - airbyte_airflow  
     restart: always
 
   clickhouse:
@@ -74,7 +76,8 @@ services:
     depends_on:
       - postgres-db
     networks:
-      - sib_network  
+      - sib_network
+      - airbyte_airflow  
 
   redis:
     image: redis:latest
@@ -88,7 +91,8 @@ services:
       start_period: 30s
     restart: always
     networks:
-      - sib_network  
+      - sib_network
+      - airbyte_airflow  
     # networks:
     #   <<: *airflow-common-networks
 
@@ -111,7 +115,8 @@ services:
     # networks:
     #   <<: *airflow-common-networks
     networks:
-      - sib_network  
+      - sib_network
+      - airbyte_airflow  
       
   airflow-scheduler:
     <<: *airflow-common
@@ -130,7 +135,8 @@ services:
     # networks:
     #   <<: *airflow-common-networks
     networks:
-      - sib_network  
+      - sib_network
+      - airbyte_airflow  
 
   airflow-worker:
     <<: *airflow-common
@@ -155,7 +161,8 @@ services:
       airflow-init:
         condition: service_completed_successfully
     networks:
-      - sib_network  
+      - sib_network
+      - airbyte_airflow  
 
   airflow-triggerer:
     <<: *airflow-common
@@ -172,7 +179,8 @@ services:
       airflow-init:
         condition: service_completed_successfully
     networks:
-      - sib_network  
+      - sib_network
+      - airbyte_airflow  
 
   airflow-init:
     <<: *airflow-common
@@ -292,5 +300,7 @@ volumes:
   postgres_data:
 
 networks:
-  sib_network: 
+  sib_network:
     driver: bridge
+  airbyte_airflow:
+    external: true # Para que el contenedor de Airbyte sea accesible
