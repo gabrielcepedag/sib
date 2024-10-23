@@ -1,0 +1,2 @@
+CREATE DATABASE airflow;
+CREATE DATABASE landing_zone;

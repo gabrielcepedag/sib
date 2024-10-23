@@ -1,0 +1,163 @@
+version: 2
+
+models:
+  - name: dwh_daily_stocks_prices
+    description: "Tabla con los precios diarios de acciones extraídos y transformados desde Airbyte."
+    columns:
+      - name: symbol
+        tests:
+          - not_null
+      - name: date
+        tests:
+          - not_null
+      - name: open
+        tests:
+          - not_null
+      - name: high
+        tests:
+          - not_null
+      - name: low
+        tests:
+          - not_null
+      - name: close
+        tests:
+          - not_null
+      - name: volume
+        tests:
+          - not_null
+      - name: dividends
+      - name: stock_splits
+      - name: created_at
+        tests:
+          - not_null
+      - name: updated_at
+        tests:
+          - not_null
+      - name: _airbyte_extracted_at
+
+  - name: dwh_bank_basic_info
+    description: "Tabla con información básica de stocks de los bancos que cotizan en la bolsa de USA."
+    columns:
+      - name: symbol
+        tests:
+          - not_null
+          # - unique
+      - name: company_name
+        tests:
+          - not_null
+      - name: industry
+      - name: sector
+      - name: employee_count
+      - name: city
+      - name: phone
+      - name: state
+      - name: country
+      - name: website
+      - name: address
+      - name: created_at
+        tests:
+          - not_null
+      - name: updated_at
+        tests:
+          - not_null
+      - name: _airbyte_extracted_at
+
+  - name: dwh_bank_fundamentals
+    description: "Tabla con fundamentals de stocks de los bancos que cotizqan en la bolsa de USA."
+    columns:
+      - name: symbol
+        tests:
+          - not_null
+      - name: assets
+        tests:
+          - not_null
+      - name: debt
+        tests:
+          - not_null
+      - name: invested_capital
+        tests:
+          - not_null
+      - name: shares_issued
+        tests:
+          - not_null
+      - name: created_at
+        tests:
+          - not_null
+      - name: updated_at
+        tests:
+          - not_null
+      - name: _airbyte_extracted_at
+
+  - name: dwh_bank_stocks
+    description: "Tabla que almacena los bancos que cotizan en la bolsa de valores de USA"
+    columns:
+      - name: symbol
+        tests:
+          - not_null
+      - name: company_name
+        tests:
+          - not_null
+      - name: last_price
+        tests:
+          - not_null
+      - name: change
+        tests:
+          - not_null
+      - name: percentage_change
+      - name: market_time
+      - name: volume
+      - name: avg_vol_3_month
+      - name: market_cap
+      - name: _airbyte_extracted_at
+
+  - name: dwh_stock_holders
+    description: "Tabla con información de los principales tenedores de acciones de los bancos que cotizan en la bolsa de valores de USA"
+    columns:
+      - name: symbol
+        tests:
+          - not_null
+      - name: date_reported
+        tests:
+          - not_null
+      - name: holder
+        tests:
+          - not_null
+      - name: shares
+        tests:
+          - not_null
+      - name: value
+        tests:
+          - not_null
+      - name: created_at
+        tests:
+          - not_null
+      - name: updated_at
+        tests:
+          - not_null
+      - name: _airbyte_extracted_at
+  - name: dwh_stock_calificadores
+    description: "Tabla con información de las calificaciones de acciones de los bancos que cotizan en la bolsa de valores de USA"
+    columns:
+      - name: symbol
+        tests:
+          - not_null
+      - name: gradedate
+        tests:
+          - not_null
+      - name: firm
+        tests:
+          - not_null
+      - name: tograde
+        tests:
+          - not_null
+      - name: fromgrade
+      - name: action
+        tests:
+          - not_null
+      - name: created_at
+        tests:
+          - not_null
+      - name: updated_at
+        tests:
+          - not_null
+      - name: _airbyte_extracted_at

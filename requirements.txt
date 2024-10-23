@@ -1,0 +1,12 @@
+yfinance
+requests
+beautifulsoup4 
+pandas
+psycopg2-binary
+sqlalchemy
+dbt-postgres
+dbt-core
+dbt-clickhouse
+apache-airflow-providers-airbyte==3.3.2
+astronomer-cosmos~=1.7.0
+astronomer-cosmos[dbt]~=1.7.0

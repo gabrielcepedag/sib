@@ -1,0 +1,16 @@
+models:
+  - name: vw_monthly_stock_summary
+    columns:
+      - name: symbol
+        tests:
+          - unique
+          - not_null
+      - name: avg_open
+        tests:
+          - not_null
+      - name: avg_close
+        tests:
+          - not_null
+      - name: avg_volume
+        tests:
+          - not_null
