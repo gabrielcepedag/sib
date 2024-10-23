@@ -1,6 +1,7 @@
 from datetime import datetime
 from airflow import DAG
 from airflow.operators.python import PythonOperator
+from airflow.decorators import task
 from extract_info_banks_stocks_tasks.scraping_banks_info import extract_bank_and_financial_services_stocks
 from extract_info_banks_stocks_tasks.save_banks_info_db import save_bank_stocks_to_db
 # from extract_info_banks_stocks_tasks.scraping_banks_stocks import get_banks_stocks
@@ -14,6 +15,14 @@ import os
 from airflow import DAG
 from airflow.utils.dates import days_ago
 from airflow.providers.airbyte.operators.airbyte import AirbyteTriggerSyncOperator
+from airflow.operators.trigger_dagrun import TriggerDagRunOperator
+from airflow.operators.bash import BashOperator
+
+from cosmos import DbtDag, ProjectConfig, ProfileConfig
+from cosmos.operators import DbtDocsOperator
+from cosmos.config import RenderConfig
+from cosmos.profiles import ClickhouseUserPasswordProfileMapping
+
 
 
 host = os.getenv("DB_HOST", "postgres-db")         
@@ -108,10 +117,77 @@ with DAG(
         wait_seconds=3
     )
 
+    # Tarea que ejecuta dbt test para testear los modelos en el stage
+    dbt_test = BashOperator(
+        task_id='dbt_test',
+        bash_command='dbt test --profiles-dir /home/airflow/.dbt --project-dir /opt/airflow',
+    )
+
+    # Tarea que ejecuta dbt run para ejecutar los modelos en clickhouse
+    dbt_run = BashOperator(
+        task_id='dbt_run',
+        bash_command='dbt run --profiles-dir /home/airflow/.dbt --project-dir /opt/airflow',
+    )
+
     extract_banks_task >> [
                         extract_save_basic_stocks_info, 
                         extract_save_fundamentals_stocks_info,
                         extract_save_price_stocks_info,
                         extract_save_holders_info,
                         extract_save_calificadores_info
-    ] >> send_to_datawarehouse
+    ] >> send_to_datawarehouse >> dbt_test >> dbt_run
+
+
+    # dbt_run = DbtDag(
+    #     # dbt/cosmos-specific parameters
+    #     project_config=ProjectConfig(
+    #         #DBT_ROOT_PATH / "jaffle_shop",
+    #         "/home/dbt"
+    #     ),
+    #     profile_config=ProfileConfig(
+    #         profile_name="dbt_project",
+    #         target_name="dev",
+    #         profile_mapping=ClickhouseUserPasswordProfileMapping(
+    #             conn_id="clickhouse_conn_id",
+    #             profile_args={
+    #                 "host": "clickhouse",
+    #                 "user": "default",
+    #                 "password": "",
+    #                 "database": "stage",
+    #                 "port": 8123,
+    #                 "clickhouse": True
+    #             }
+    #         ),
+    #     ),
+    #     operator_args={
+    #         "install_deps": True,  # install any necessary dependencies before running any dbt command
+    #         "full_refresh": True,  # used only in dbt commands that support this flag
+    #     },
+    #     # normal dag parameters
+    #     start_date=datetime(2023, 1, 1),
+    #     catchup=False,
+    #     dag_id="dbt_run",
+    #     default_args={"retries": 2},
+    # )
+
+
+
+    # # Trigger for dbt DAG
+    # trigger_dbt_dag = TriggerDagRunOperator(
+    #     task_id="trigger_dbt_dag",
+    #     trigger_dag_id="dbt_stocks",
+    #     wait_for_completion=True,
+    #     poke_interval=30,
+    # )
+
+    # dbt_cosmos_dag = DbtDag(
+    # dag_id="dbt_ecommerce",
+    # start_date=datetime(2023, 10, 1),
+    # tags=["dbt", "ecommerce"],
+    # catchup=False,
+    # project_config=project_config,
+    # profile_config=profile_config,
+    # render_config=RenderConfig(select=["path:models/ecommerce"]),
+    # )
+
+
