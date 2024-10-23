@@ -1,8 +1,0 @@
-tunnels:
-  postgres:
-    proto: tcp
-    addr: 5432
-  clickhouse:
-    proto: http
-    addr: 8123
-

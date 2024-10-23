@@ -9,15 +9,3 @@ dbt_project:
       threads: 4
       type: clickhouse
   target: dev
-# dbt_project: no se esta usando. Se esta usando el del dag
-#   outputs:
-#     dev:
-#       dbname:
-#       host: host.docker.internal
-#       pass:
-#       port: 8123 #Clickhouse port
-#       # schema: dwh
-#       threads: 4
-#       type: clickhouse
-#       user: default
-#   target: dev

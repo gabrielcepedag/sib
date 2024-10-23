@@ -139,9 +139,7 @@ with DAG(
 
 
     # dbt_run = DbtDag(
-    #     # dbt/cosmos-specific parameters
     #     project_config=ProjectConfig(
-    #         #DBT_ROOT_PATH / "jaffle_shop",
     #         "/home/dbt"
     #     ),
     #     profile_config=ProfileConfig(
@@ -160,34 +158,13 @@ with DAG(
     #         ),
     #     ),
     #     operator_args={
-    #         "install_deps": True,  # install any necessary dependencies before running any dbt command
-    #         "full_refresh": True,  # used only in dbt commands that support this flag
+    #         "install_deps": True,  
+    #         "full_refresh": True, 
     #     },
     #     # normal dag parameters
-    #     start_date=datetime(2023, 1, 1),
+    #     start_date=datetime(2024, 1, 1),
     #     catchup=False,
     #     dag_id="dbt_run",
     #     default_args={"retries": 2},
     # )
-
-
-
-    # # Trigger for dbt DAG
-    # trigger_dbt_dag = TriggerDagRunOperator(
-    #     task_id="trigger_dbt_dag",
-    #     trigger_dag_id="dbt_stocks",
-    #     wait_for_completion=True,
-    #     poke_interval=30,
-    # )
-
-    # dbt_cosmos_dag = DbtDag(
-    # dag_id="dbt_ecommerce",
-    # start_date=datetime(2023, 10, 1),
-    # tags=["dbt", "ecommerce"],
-    # catchup=False,
-    # project_config=project_config,
-    # profile_config=profile_config,
-    # render_config=RenderConfig(select=["path:models/ecommerce"]),
-    # )
-
 
