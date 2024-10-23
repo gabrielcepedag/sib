@@ -26,12 +26,12 @@ from cosmos.profiles import ClickhouseUserPasswordProfileMapping
 
 
 host = os.getenv("DB_HOST", "postgres-db")         
-database = os.getenv("POSTGRES_DB2", "landing_zone")      
+database = os.getenv("POSTGRES_DB", "landing_zone")      
 user = os.getenv("POSTGRES_USER", "sib_user")        
 password = os.getenv("POSTGRES_PASSWORD", "sib_user") 
 port = os.getenv("POSTGRES_PORT", "5432")        
-ENGINE_DB = f'postgresql://{user}:{password}@{host}:{port}/{database}'
 AIRBYTE_CONN_ID=os.getenv("AIRBYTE_CONNECTION_ID", "8bf4a1bc-7071-4b67-8d55-4b5be1484508")
+ENGINE_DB = f'postgresql://{user}:{password}@{host}:{port}/{database}'
 
 # Definir el DAG
 with DAG(

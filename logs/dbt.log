@@ -5453,3 +5453,1924 @@ ORDER BY
 [0m13:41:20.510133 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 4.1272054, "process_user_time": 5.828163, "process_kernel_time": 2.524154, "process_mem_max_rss": "310292", "process_in_blocks": "0", "process_out_blocks": "0"}
 [0m13:41:20.512172 [debug] [MainThread]: Command `dbt run` succeeded at 13:41:20.511869 after 4.13 seconds
 [0m13:41:20.513307 [debug] [MainThread]: Flushing usage events
+[0m14:42:49.391321 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 14:42:49.461748 | e086fbfa-ddc3-492f-bba5-0bad37088203 ==============================
+[0m14:42:49.461748 [info ] [MainThread]: Running with dbt=1.8.7
+[0m14:42:49.465991 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/opt/airflow/logs', 'version_check': 'True', 'profiles_dir': '/home/airflow/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt test --profiles-dir /home/airflow/.dbt --project-dir /opt/airflow', 'send_anonymous_usage_stats': 'True'}
+[0m14:42:49.490269 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'CLICKHOUSE_HTTP_PORT'
+[0m14:42:49.496881 [debug] [MainThread]: Resource report: {"command_name": "test", "command_wall_clock_time": 0.1929963, "process_user_time": 2.49177, "process_kernel_time": 0.646014, "process_mem_max_rss": "313744", "process_in_blocks": "2304", "process_out_blocks": "1640", "command_success": false}
+[0m14:42:49.498690 [debug] [MainThread]: Command `dbt test` failed at 14:42:49.498371 after 0.20 seconds
+[0m14:42:49.499744 [debug] [MainThread]: Flushing usage events
+[0m14:46:14.551120 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 14:46:14.606143 | 7e62bf62-2642-4edf-8d1b-b44df3d808af ==============================
+[0m14:46:14.606143 [info ] [MainThread]: Running with dbt=1.8.7
+[0m14:46:14.610725 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/home/airflow/.dbt', 'log_path': '/opt/airflow/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt test --profiles-dir /home/airflow/.dbt --project-dir /opt/airflow', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m14:46:14.628369 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'CLICKHOUSE_HTTP_PORT'
+[0m14:46:14.637612 [debug] [MainThread]: Resource report: {"command_name": "test", "command_wall_clock_time": 0.18524009, "process_user_time": 2.404192, "process_kernel_time": 0.500915, "process_mem_max_rss": "313796", "process_out_blocks": "1640", "command_success": false, "process_in_blocks": "0"}
+[0m14:46:14.642783 [debug] [MainThread]: Command `dbt test` failed at 14:46:14.641847 after 0.19 seconds
+[0m14:46:14.644867 [debug] [MainThread]: Flushing usage events
+[0m15:01:34.881698 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 15:01:34.935010 | f4bcb8fd-d142-451f-a2f2-f792b6671723 ==============================
+[0m15:01:34.935010 [info ] [MainThread]: Running with dbt=1.8.7
+[0m15:01:34.938361 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/airflow/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/opt/airflow/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt test --profiles-dir /home/airflow/.dbt --project-dir /opt/airflow', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:01:35.047339 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "dbt_project", target "dev" invalid: '8123' is not valid under any of the given schemas
+[0m15:01:35.053114 [debug] [MainThread]: Resource report: {"command_name": "test", "command_wall_clock_time": 0.27883738, "process_user_time": 5.167422, "process_kernel_time": 1.370926, "process_mem_max_rss": "312124", "process_in_blocks": "19384", "process_out_blocks": "1640", "command_success": false}
+[0m15:01:35.055595 [debug] [MainThread]: Command `dbt test` failed at 15:01:35.054885 after 0.28 seconds
+[0m15:01:35.057304 [debug] [MainThread]: Flushing usage events
+[0m15:06:13.244683 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 15:06:13.310036 | b0117605-02a8-4677-be91-fff1e26280d0 ==============================
+[0m15:06:13.310036 [info ] [MainThread]: Running with dbt=1.8.7
+[0m15:06:13.316322 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/airflow/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': '/opt/airflow/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt test --profiles-dir /home/airflow/.dbt --project-dir /opt/airflow', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:06:13.727971 [info ] [MainThread]: Registered adapter: clickhouse=1.8.4
+[0m15:06:13.759093 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m15:06:14.027630 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:06:14.028668 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:06:14.319287 [info ] [MainThread]: Found 7 models, 43 data tests, 458 macros
+[0m15:06:14.325238 [info ] [MainThread]: 
+[0m15:06:14.328650 [debug] [MainThread]: Acquiring new clickhouse connection 'master'
+[0m15:06:14.347058 [debug] [ThreadPool]: Acquiring new clickhouse connection 'list__dwh'
+[0m15:06:14.369979 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:06:15.904913 [debug] [ThreadPool]: dbt_clickhouse adapter: On list__dwh: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list__dwh"} */
+select
+      t.name as name,
+      t.database as schema,
+      multiIf(
+        engine in ('MaterializedView', 'View'), 'view',
+        engine = 'Dictionary', 'dictionary',
+        'table'
+      ) as type,
+      db.engine as db_engine,0 as is_on_cluster
+          from system.tables as t join system.databases as db on t.database = db.name
+        where schema = 'dwh'
+      
+
+  ...
+[0m15:06:15.968162 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.06 seconds
+[0m15:06:16.000307 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:06:16.004770 [info ] [MainThread]: 
+[0m15:06:16.023785 [debug] [Thread-1  ]: Began running node test.dbt_project.not_null_dwh_bank_basic_info_company_name.815f3c8c54
+[0m15:06:16.024754 [debug] [Thread-2  ]: Began running node test.dbt_project.not_null_dwh_bank_basic_info_created_at.e24078c4ee
+[0m15:06:16.025588 [debug] [Thread-3  ]: Began running node test.dbt_project.not_null_dwh_bank_basic_info_symbol.4690681421
+[0m15:06:16.026330 [debug] [Thread-4  ]: Began running node test.dbt_project.not_null_dwh_bank_basic_info_updated_at.f84380ef45
+[0m15:06:16.026991 [info ] [Thread-1  ]: 1 of 43 START test not_null_dwh_bank_basic_info_company_name ................... [RUN]
+[0m15:06:16.028326 [info ] [Thread-2  ]: 2 of 43 START test not_null_dwh_bank_basic_info_created_at ..................... [RUN]
+[0m15:06:16.029441 [info ] [Thread-3  ]: 3 of 43 START test not_null_dwh_bank_basic_info_symbol ......................... [RUN]
+[0m15:06:16.030377 [info ] [Thread-4  ]: 4 of 43 START test not_null_dwh_bank_basic_info_updated_at ..................... [RUN]
+[0m15:06:16.031701 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list__dwh, now test.dbt_project.not_null_dwh_bank_basic_info_company_name.815f3c8c54)
+[0m15:06:16.033275 [debug] [Thread-2  ]: Acquiring new clickhouse connection 'test.dbt_project.not_null_dwh_bank_basic_info_created_at.e24078c4ee'
+[0m15:06:16.034483 [debug] [Thread-3  ]: Acquiring new clickhouse connection 'test.dbt_project.not_null_dwh_bank_basic_info_symbol.4690681421'
+[0m15:06:16.035382 [debug] [Thread-4  ]: Acquiring new clickhouse connection 'test.dbt_project.not_null_dwh_bank_basic_info_updated_at.f84380ef45'
+[0m15:06:16.036112 [debug] [Thread-1  ]: Began compiling node test.dbt_project.not_null_dwh_bank_basic_info_company_name.815f3c8c54
+[0m15:06:16.036822 [debug] [Thread-2  ]: Began compiling node test.dbt_project.not_null_dwh_bank_basic_info_created_at.e24078c4ee
+[0m15:06:16.037633 [debug] [Thread-3  ]: Began compiling node test.dbt_project.not_null_dwh_bank_basic_info_symbol.4690681421
+[0m15:06:16.038536 [debug] [Thread-4  ]: Began compiling node test.dbt_project.not_null_dwh_bank_basic_info_updated_at.f84380ef45
+[0m15:06:16.072912 [debug] [Thread-2  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_bank_basic_info_created_at.e24078c4ee"
+[0m15:06:16.073627 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_bank_basic_info_company_name.815f3c8c54"
+[0m15:06:16.079872 [debug] [Thread-3  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_bank_basic_info_symbol.4690681421"
+[0m15:06:16.085424 [debug] [Thread-4  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_bank_basic_info_updated_at.f84380ef45"
+[0m15:06:16.089975 [debug] [Thread-3  ]: Began executing node test.dbt_project.not_null_dwh_bank_basic_info_symbol.4690681421
+[0m15:06:16.090764 [debug] [Thread-2  ]: Began executing node test.dbt_project.not_null_dwh_bank_basic_info_created_at.e24078c4ee
+[0m15:06:16.091576 [debug] [Thread-1  ]: Began executing node test.dbt_project.not_null_dwh_bank_basic_info_company_name.815f3c8c54
+[0m15:06:16.092217 [debug] [Thread-4  ]: Began executing node test.dbt_project.not_null_dwh_bank_basic_info_updated_at.f84380ef45
+[0m15:06:16.114956 [debug] [Thread-3  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_bank_basic_info_symbol.4690681421"
+[0m15:06:16.118666 [debug] [Thread-2  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_bank_basic_info_created_at.e24078c4ee"
+[0m15:06:16.123250 [debug] [Thread-1  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_bank_basic_info_company_name.815f3c8c54"
+[0m15:06:16.127166 [debug] [Thread-4  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_bank_basic_info_updated_at.f84380ef45"
+[0m15:06:16.130288 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+[0m15:06:16.131159 [debug] [Thread-2  ]: Opening a new connection, currently in state init
+[0m15:06:16.132189 [debug] [Thread-1  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_bank_basic_info_company_name.815f3c8c54: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_bank_basic_info_company_name.815f3c8c54"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select company_name
+from `dwh`.`dwh_bank_basic_info`
+where company_name is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:16.134436 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+[0m15:06:16.229520 [debug] [Thread-3  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_bank_basic_info_symbol.4690681421: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_bank_basic_info_symbol.4690681421"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select symbol
+from `dwh`.`dwh_bank_basic_info`
+where symbol is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:16.245354 [debug] [Thread-2  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_bank_basic_info_created_at.e24078c4ee: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_bank_basic_info_created_at.e24078c4ee"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select created_at
+from `dwh`.`dwh_bank_basic_info`
+where created_at is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:16.257131 [debug] [Thread-4  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_bank_basic_info_updated_at.f84380ef45: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_bank_basic_info_updated_at.f84380ef45"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select updated_at
+from `dwh`.`dwh_bank_basic_info`
+where updated_at is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:16.265554 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.13 seconds
+[0m15:06:16.267030 [debug] [Thread-3  ]: dbt_clickhouse adapter: SQL status: OK in 0.03 seconds
+[0m15:06:16.278101 [info ] [Thread-1  ]: 1 of 43 PASS not_null_dwh_bank_basic_info_company_name ......................... [[32mPASS[0m in 0.25s]
+[0m15:06:16.279917 [debug] [Thread-2  ]: dbt_clickhouse adapter: SQL status: OK in 0.03 seconds
+[0m15:06:16.282979 [info ] [Thread-3  ]: 3 of 43 PASS not_null_dwh_bank_basic_info_symbol ............................... [[32mPASS[0m in 0.25s]
+[0m15:06:16.285624 [debug] [Thread-1  ]: Finished running node test.dbt_project.not_null_dwh_bank_basic_info_company_name.815f3c8c54
+[0m15:06:16.289071 [info ] [Thread-2  ]: 2 of 43 PASS not_null_dwh_bank_basic_info_created_at ........................... [[32mPASS[0m in 0.26s]
+[0m15:06:16.291006 [debug] [Thread-3  ]: Finished running node test.dbt_project.not_null_dwh_bank_basic_info_symbol.4690681421
+[0m15:06:16.292399 [debug] [Thread-1  ]: Began running node test.dbt_project.not_null_dwh_bank_fundamentals_assets.84d64bc77f
+[0m15:06:16.294523 [debug] [Thread-2  ]: Finished running node test.dbt_project.not_null_dwh_bank_basic_info_created_at.e24078c4ee
+[0m15:06:16.296512 [debug] [Thread-3  ]: Began running node test.dbt_project.not_null_dwh_bank_fundamentals_created_at.bb94fa8684
+[0m15:06:16.298299 [info ] [Thread-1  ]: 5 of 43 START test not_null_dwh_bank_fundamentals_assets ....................... [RUN]
+[0m15:06:16.300585 [debug] [Thread-2  ]: Began running node test.dbt_project.not_null_dwh_bank_fundamentals_debt.2644806bfd
+[0m15:06:16.302492 [info ] [Thread-3  ]: 6 of 43 START test not_null_dwh_bank_fundamentals_created_at ................... [RUN]
+[0m15:06:16.305178 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_bank_basic_info_company_name.815f3c8c54, now test.dbt_project.not_null_dwh_bank_fundamentals_assets.84d64bc77f)
+[0m15:06:16.307966 [info ] [Thread-2  ]: 7 of 43 START test not_null_dwh_bank_fundamentals_debt ......................... [RUN]
+[0m15:06:16.310028 [debug] [Thread-3  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_bank_basic_info_symbol.4690681421, now test.dbt_project.not_null_dwh_bank_fundamentals_created_at.bb94fa8684)
+[0m15:06:16.311181 [debug] [Thread-1  ]: Began compiling node test.dbt_project.not_null_dwh_bank_fundamentals_assets.84d64bc77f
+[0m15:06:16.312281 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_bank_basic_info_created_at.e24078c4ee, now test.dbt_project.not_null_dwh_bank_fundamentals_debt.2644806bfd)
+[0m15:06:16.313460 [debug] [Thread-3  ]: Began compiling node test.dbt_project.not_null_dwh_bank_fundamentals_created_at.bb94fa8684
+[0m15:06:16.324377 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_bank_fundamentals_assets.84d64bc77f"
+[0m15:06:16.325547 [debug] [Thread-2  ]: Began compiling node test.dbt_project.not_null_dwh_bank_fundamentals_debt.2644806bfd
+[0m15:06:16.333128 [debug] [Thread-3  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_bank_fundamentals_created_at.bb94fa8684"
+[0m15:06:16.343892 [debug] [Thread-2  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_bank_fundamentals_debt.2644806bfd"
+[0m15:06:16.345574 [debug] [Thread-1  ]: Began executing node test.dbt_project.not_null_dwh_bank_fundamentals_assets.84d64bc77f
+[0m15:06:16.351271 [debug] [Thread-1  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_bank_fundamentals_assets.84d64bc77f"
+[0m15:06:16.352537 [debug] [Thread-3  ]: Began executing node test.dbt_project.not_null_dwh_bank_fundamentals_created_at.bb94fa8684
+[0m15:06:16.354351 [debug] [Thread-2  ]: Began executing node test.dbt_project.not_null_dwh_bank_fundamentals_debt.2644806bfd
+[0m15:06:16.358916 [debug] [Thread-3  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_bank_fundamentals_created_at.bb94fa8684"
+[0m15:06:16.366210 [debug] [Thread-2  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_bank_fundamentals_debt.2644806bfd"
+[0m15:06:16.367206 [debug] [Thread-1  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_bank_fundamentals_assets.84d64bc77f: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_bank_fundamentals_assets.84d64bc77f"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select assets
+from `dwh`.`dwh_bank_fundamentals`
+where assets is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:16.378191 [debug] [Thread-3  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_bank_fundamentals_created_at.bb94fa8684: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_bank_fundamentals_created_at.bb94fa8684"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select created_at
+from `dwh`.`dwh_bank_fundamentals`
+where created_at is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:16.381982 [debug] [Thread-2  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_bank_fundamentals_debt.2644806bfd: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_bank_fundamentals_debt.2644806bfd"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select debt
+from `dwh`.`dwh_bank_fundamentals`
+where debt is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:16.801859 [debug] [Thread-2  ]: dbt_clickhouse adapter: SQL status: OK in 0.42 seconds
+[0m15:06:16.803885 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.43 seconds
+[0m15:06:16.805759 [debug] [Thread-4  ]: dbt_clickhouse adapter: SQL status: OK in 0.55 seconds
+[0m15:06:16.807516 [debug] [Thread-3  ]: dbt_clickhouse adapter: SQL status: OK in 0.43 seconds
+[0m15:06:16.815025 [info ] [Thread-2  ]: 7 of 43 PASS not_null_dwh_bank_fundamentals_debt ............................... [[32mPASS[0m in 0.50s]
+[0m15:06:16.819923 [info ] [Thread-1  ]: 5 of 43 PASS not_null_dwh_bank_fundamentals_assets ............................. [[32mPASS[0m in 0.52s]
+[0m15:06:16.824188 [info ] [Thread-4  ]: 4 of 43 PASS not_null_dwh_bank_basic_info_updated_at ........................... [[32mPASS[0m in 0.79s]
+[0m15:06:16.830309 [info ] [Thread-3  ]: 6 of 43 PASS not_null_dwh_bank_fundamentals_created_at ......................... [[32mPASS[0m in 0.52s]
+[0m15:06:16.837427 [debug] [Thread-2  ]: Finished running node test.dbt_project.not_null_dwh_bank_fundamentals_debt.2644806bfd
+[0m15:06:16.840980 [debug] [Thread-1  ]: Finished running node test.dbt_project.not_null_dwh_bank_fundamentals_assets.84d64bc77f
+[0m15:06:16.849346 [debug] [Thread-4  ]: Finished running node test.dbt_project.not_null_dwh_bank_basic_info_updated_at.f84380ef45
+[0m15:06:16.851330 [debug] [Thread-3  ]: Finished running node test.dbt_project.not_null_dwh_bank_fundamentals_created_at.bb94fa8684
+[0m15:06:16.853075 [debug] [Thread-2  ]: Began running node test.dbt_project.not_null_dwh_bank_fundamentals_invested_capital.54226c66bc
+[0m15:06:16.854967 [debug] [Thread-1  ]: Began running node test.dbt_project.not_null_dwh_bank_fundamentals_shares_issued.4509371ebf
+[0m15:06:16.856412 [debug] [Thread-4  ]: Began running node test.dbt_project.not_null_dwh_bank_fundamentals_symbol.ba1d00a0e8
+[0m15:06:16.858069 [debug] [Thread-3  ]: Began running node test.dbt_project.not_null_dwh_bank_fundamentals_updated_at.9a641375c8
+[0m15:06:16.865728 [info ] [Thread-3  ]: 11 of 43 START test not_null_dwh_bank_fundamentals_updated_at .................. [RUN]
+[0m15:06:16.861592 [info ] [Thread-1  ]: 9 of 43 START test not_null_dwh_bank_fundamentals_shares_issued ................ [RUN]
+[0m15:06:16.864109 [info ] [Thread-4  ]: 10 of 43 START test not_null_dwh_bank_fundamentals_symbol ...................... [RUN]
+[0m15:06:16.859546 [info ] [Thread-2  ]: 8 of 43 START test not_null_dwh_bank_fundamentals_invested_capital ............. [RUN]
+[0m15:06:16.867603 [debug] [Thread-3  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_bank_fundamentals_created_at.bb94fa8684, now test.dbt_project.not_null_dwh_bank_fundamentals_updated_at.9a641375c8)
+[0m15:06:16.869180 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_bank_fundamentals_assets.84d64bc77f, now test.dbt_project.not_null_dwh_bank_fundamentals_shares_issued.4509371ebf)
+[0m15:06:16.871055 [debug] [Thread-4  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_bank_basic_info_updated_at.f84380ef45, now test.dbt_project.not_null_dwh_bank_fundamentals_symbol.ba1d00a0e8)
+[0m15:06:16.872541 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_bank_fundamentals_debt.2644806bfd, now test.dbt_project.not_null_dwh_bank_fundamentals_invested_capital.54226c66bc)
+[0m15:06:16.873868 [debug] [Thread-3  ]: Began compiling node test.dbt_project.not_null_dwh_bank_fundamentals_updated_at.9a641375c8
+[0m15:06:16.877394 [debug] [Thread-1  ]: Began compiling node test.dbt_project.not_null_dwh_bank_fundamentals_shares_issued.4509371ebf
+[0m15:06:16.879117 [debug] [Thread-4  ]: Began compiling node test.dbt_project.not_null_dwh_bank_fundamentals_symbol.ba1d00a0e8
+[0m15:06:16.880383 [debug] [Thread-2  ]: Began compiling node test.dbt_project.not_null_dwh_bank_fundamentals_invested_capital.54226c66bc
+[0m15:06:16.891614 [debug] [Thread-3  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_bank_fundamentals_updated_at.9a641375c8"
+[0m15:06:16.904498 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_bank_fundamentals_shares_issued.4509371ebf"
+[0m15:06:16.916308 [debug] [Thread-4  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_bank_fundamentals_symbol.ba1d00a0e8"
+[0m15:06:16.931304 [debug] [Thread-2  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_bank_fundamentals_invested_capital.54226c66bc"
+[0m15:06:16.943513 [debug] [Thread-3  ]: Began executing node test.dbt_project.not_null_dwh_bank_fundamentals_updated_at.9a641375c8
+[0m15:06:16.948964 [debug] [Thread-1  ]: Began executing node test.dbt_project.not_null_dwh_bank_fundamentals_shares_issued.4509371ebf
+[0m15:06:16.963116 [debug] [Thread-3  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_bank_fundamentals_updated_at.9a641375c8"
+[0m15:06:16.964814 [debug] [Thread-4  ]: Began executing node test.dbt_project.not_null_dwh_bank_fundamentals_symbol.ba1d00a0e8
+[0m15:06:16.982161 [debug] [Thread-1  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_bank_fundamentals_shares_issued.4509371ebf"
+[0m15:06:16.983196 [debug] [Thread-2  ]: Began executing node test.dbt_project.not_null_dwh_bank_fundamentals_invested_capital.54226c66bc
+[0m15:06:16.993118 [debug] [Thread-4  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_bank_fundamentals_symbol.ba1d00a0e8"
+[0m15:06:17.003836 [debug] [Thread-2  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_bank_fundamentals_invested_capital.54226c66bc"
+[0m15:06:17.005491 [debug] [Thread-3  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_bank_fundamentals_updated_at.9a641375c8: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_bank_fundamentals_updated_at.9a641375c8"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select updated_at
+from `dwh`.`dwh_bank_fundamentals`
+where updated_at is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:17.006598 [debug] [Thread-1  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_bank_fundamentals_shares_issued.4509371ebf: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_bank_fundamentals_shares_issued.4509371ebf"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select shares_issued
+from `dwh`.`dwh_bank_fundamentals`
+where shares_issued is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:17.008187 [debug] [Thread-4  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_bank_fundamentals_symbol.ba1d00a0e8: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_bank_fundamentals_symbol.ba1d00a0e8"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select symbol
+from `dwh`.`dwh_bank_fundamentals`
+where symbol is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:17.011210 [debug] [Thread-2  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_bank_fundamentals_invested_capital.54226c66bc: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_bank_fundamentals_invested_capital.54226c66bc"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select invested_capital
+from `dwh`.`dwh_bank_fundamentals`
+where invested_capital is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:17.022260 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:17.027271 [info ] [Thread-1  ]: 9 of 43 PASS not_null_dwh_bank_fundamentals_shares_issued ...................... [[32mPASS[0m in 0.16s]
+[0m15:06:17.029409 [debug] [Thread-3  ]: dbt_clickhouse adapter: SQL status: OK in 0.02 seconds
+[0m15:06:17.031325 [debug] [Thread-2  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:17.033693 [debug] [Thread-4  ]: dbt_clickhouse adapter: SQL status: OK in 0.02 seconds
+[0m15:06:17.037125 [debug] [Thread-1  ]: Finished running node test.dbt_project.not_null_dwh_bank_fundamentals_shares_issued.4509371ebf
+[0m15:06:17.045652 [info ] [Thread-3  ]: 11 of 43 PASS not_null_dwh_bank_fundamentals_updated_at ........................ [[32mPASS[0m in 0.18s]
+[0m15:06:17.054433 [info ] [Thread-2  ]: 8 of 43 PASS not_null_dwh_bank_fundamentals_invested_capital ................... [[32mPASS[0m in 0.18s]
+[0m15:06:17.060031 [info ] [Thread-4  ]: 10 of 43 PASS not_null_dwh_bank_fundamentals_symbol ............................ [[32mPASS[0m in 0.19s]
+[0m15:06:17.064247 [debug] [Thread-1  ]: Began running node test.dbt_project.not_null_dwh_bank_stocks_change.cc252c07de
+[0m15:06:17.066134 [debug] [Thread-3  ]: Finished running node test.dbt_project.not_null_dwh_bank_fundamentals_updated_at.9a641375c8
+[0m15:06:17.072524 [debug] [Thread-3  ]: Began running node test.dbt_project.not_null_dwh_bank_stocks_company_name.c19388889d
+[0m15:06:17.069732 [debug] [Thread-4  ]: Finished running node test.dbt_project.not_null_dwh_bank_fundamentals_symbol.ba1d00a0e8
+[0m15:06:17.070736 [info ] [Thread-1  ]: 12 of 43 START test not_null_dwh_bank_stocks_change ............................ [RUN]
+[0m15:06:17.068175 [debug] [Thread-2  ]: Finished running node test.dbt_project.not_null_dwh_bank_fundamentals_invested_capital.54226c66bc
+[0m15:06:17.073986 [info ] [Thread-3  ]: 13 of 43 START test not_null_dwh_bank_stocks_company_name ...................... [RUN]
+[0m15:06:17.075906 [debug] [Thread-4  ]: Began running node test.dbt_project.not_null_dwh_bank_stocks_last_price.aca96edb28
+[0m15:06:17.077251 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_bank_fundamentals_shares_issued.4509371ebf, now test.dbt_project.not_null_dwh_bank_stocks_change.cc252c07de)
+[0m15:06:17.078892 [debug] [Thread-2  ]: Began running node test.dbt_project.not_null_dwh_bank_stocks_symbol.642ec8e3d3
+[0m15:06:17.081442 [debug] [Thread-3  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_bank_fundamentals_updated_at.9a641375c8, now test.dbt_project.not_null_dwh_bank_stocks_company_name.c19388889d)
+[0m15:06:17.083397 [info ] [Thread-4  ]: 14 of 43 START test not_null_dwh_bank_stocks_last_price ........................ [RUN]
+[0m15:06:17.085012 [debug] [Thread-1  ]: Began compiling node test.dbt_project.not_null_dwh_bank_stocks_change.cc252c07de
+[0m15:06:17.086191 [info ] [Thread-2  ]: 15 of 43 START test not_null_dwh_bank_stocks_symbol ............................ [RUN]
+[0m15:06:17.087695 [debug] [Thread-3  ]: Began compiling node test.dbt_project.not_null_dwh_bank_stocks_company_name.c19388889d
+[0m15:06:17.089060 [debug] [Thread-4  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_bank_fundamentals_symbol.ba1d00a0e8, now test.dbt_project.not_null_dwh_bank_stocks_last_price.aca96edb28)
+[0m15:06:17.114457 [debug] [Thread-4  ]: Began compiling node test.dbt_project.not_null_dwh_bank_stocks_last_price.aca96edb28
+[0m15:06:17.101674 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_bank_fundamentals_invested_capital.54226c66bc, now test.dbt_project.not_null_dwh_bank_stocks_symbol.642ec8e3d3)
+[0m15:06:17.111054 [debug] [Thread-3  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_bank_stocks_company_name.c19388889d"
+[0m15:06:17.099463 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_bank_stocks_change.cc252c07de"
+[0m15:06:17.126706 [debug] [Thread-4  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_bank_stocks_last_price.aca96edb28"
+[0m15:06:17.128891 [debug] [Thread-2  ]: Began compiling node test.dbt_project.not_null_dwh_bank_stocks_symbol.642ec8e3d3
+[0m15:06:17.144371 [debug] [Thread-2  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_bank_stocks_symbol.642ec8e3d3"
+[0m15:06:17.146324 [debug] [Thread-1  ]: Began executing node test.dbt_project.not_null_dwh_bank_stocks_change.cc252c07de
+[0m15:06:17.147112 [debug] [Thread-3  ]: Began executing node test.dbt_project.not_null_dwh_bank_stocks_company_name.c19388889d
+[0m15:06:17.148702 [debug] [Thread-4  ]: Began executing node test.dbt_project.not_null_dwh_bank_stocks_last_price.aca96edb28
+[0m15:06:17.153967 [debug] [Thread-1  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_bank_stocks_change.cc252c07de"
+[0m15:06:17.155485 [debug] [Thread-2  ]: Began executing node test.dbt_project.not_null_dwh_bank_stocks_symbol.642ec8e3d3
+[0m15:06:17.160011 [debug] [Thread-3  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_bank_stocks_company_name.c19388889d"
+[0m15:06:17.164883 [debug] [Thread-4  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_bank_stocks_last_price.aca96edb28"
+[0m15:06:17.169938 [debug] [Thread-2  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_bank_stocks_symbol.642ec8e3d3"
+[0m15:06:17.172004 [debug] [Thread-1  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_bank_stocks_change.cc252c07de: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_bank_stocks_change.cc252c07de"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select change
+from `dwh`.`dwh_bank_stocks`
+where change is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:17.173540 [debug] [Thread-3  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_bank_stocks_company_name.c19388889d: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_bank_stocks_company_name.c19388889d"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select company_name
+from `dwh`.`dwh_bank_stocks`
+where company_name is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:17.174770 [debug] [Thread-4  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_bank_stocks_last_price.aca96edb28: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_bank_stocks_last_price.aca96edb28"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select last_price
+from `dwh`.`dwh_bank_stocks`
+where last_price is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:17.178079 [debug] [Thread-2  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_bank_stocks_symbol.642ec8e3d3: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_bank_stocks_symbol.642ec8e3d3"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select symbol
+from `dwh`.`dwh_bank_stocks`
+where symbol is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:17.186780 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:17.188238 [debug] [Thread-3  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:17.189782 [debug] [Thread-4  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:17.192773 [info ] [Thread-1  ]: 12 of 43 PASS not_null_dwh_bank_stocks_change .................................. [[32mPASS[0m in 0.12s]
+[0m15:06:17.195061 [debug] [Thread-2  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:17.198232 [info ] [Thread-3  ]: 13 of 43 PASS not_null_dwh_bank_stocks_company_name ............................ [[32mPASS[0m in 0.12s]
+[0m15:06:17.202427 [info ] [Thread-4  ]: 14 of 43 PASS not_null_dwh_bank_stocks_last_price .............................. [[32mPASS[0m in 0.11s]
+[0m15:06:17.204836 [debug] [Thread-1  ]: Finished running node test.dbt_project.not_null_dwh_bank_stocks_change.cc252c07de
+[0m15:06:17.208884 [info ] [Thread-2  ]: 15 of 43 PASS not_null_dwh_bank_stocks_symbol .................................. [[32mPASS[0m in 0.11s]
+[0m15:06:17.213741 [debug] [Thread-3  ]: Finished running node test.dbt_project.not_null_dwh_bank_stocks_company_name.c19388889d
+[0m15:06:17.215642 [debug] [Thread-4  ]: Finished running node test.dbt_project.not_null_dwh_bank_stocks_last_price.aca96edb28
+[0m15:06:17.216926 [debug] [Thread-1  ]: Began running node test.dbt_project.not_null_dwh_daily_stocks_prices_close.d90904a4f0
+[0m15:06:17.218116 [debug] [Thread-2  ]: Finished running node test.dbt_project.not_null_dwh_bank_stocks_symbol.642ec8e3d3
+[0m15:06:17.219249 [debug] [Thread-3  ]: Began running node test.dbt_project.not_null_dwh_daily_stocks_prices_created_at.fe2c4145f8
+[0m15:06:17.220506 [debug] [Thread-4  ]: Began running node test.dbt_project.not_null_dwh_daily_stocks_prices_date.892916b548
+[0m15:06:17.221969 [info ] [Thread-1  ]: 16 of 43 START test not_null_dwh_daily_stocks_prices_close ..................... [RUN]
+[0m15:06:17.223678 [debug] [Thread-2  ]: Began running node test.dbt_project.not_null_dwh_daily_stocks_prices_high.b9afd5323b
+[0m15:06:17.224966 [info ] [Thread-3  ]: 17 of 43 START test not_null_dwh_daily_stocks_prices_created_at ................ [RUN]
+[0m15:06:17.226217 [info ] [Thread-4  ]: 18 of 43 START test not_null_dwh_daily_stocks_prices_date ...................... [RUN]
+[0m15:06:17.255476 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_bank_stocks_change.cc252c07de, now test.dbt_project.not_null_dwh_daily_stocks_prices_close.d90904a4f0)
+[0m15:06:17.256625 [info ] [Thread-2  ]: 19 of 43 START test not_null_dwh_daily_stocks_prices_high ...................... [RUN]
+[0m15:06:17.257980 [debug] [Thread-3  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_bank_stocks_company_name.c19388889d, now test.dbt_project.not_null_dwh_daily_stocks_prices_created_at.fe2c4145f8)
+[0m15:06:17.259482 [debug] [Thread-4  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_bank_stocks_last_price.aca96edb28, now test.dbt_project.not_null_dwh_daily_stocks_prices_date.892916b548)
+[0m15:06:17.260687 [debug] [Thread-1  ]: Began compiling node test.dbt_project.not_null_dwh_daily_stocks_prices_close.d90904a4f0
+[0m15:06:17.262223 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_bank_stocks_symbol.642ec8e3d3, now test.dbt_project.not_null_dwh_daily_stocks_prices_high.b9afd5323b)
+[0m15:06:17.263269 [debug] [Thread-3  ]: Began compiling node test.dbt_project.not_null_dwh_daily_stocks_prices_created_at.fe2c4145f8
+[0m15:06:17.264194 [debug] [Thread-4  ]: Began compiling node test.dbt_project.not_null_dwh_daily_stocks_prices_date.892916b548
+[0m15:06:17.272758 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_daily_stocks_prices_close.d90904a4f0"
+[0m15:06:17.274001 [debug] [Thread-2  ]: Began compiling node test.dbt_project.not_null_dwh_daily_stocks_prices_high.b9afd5323b
+[0m15:06:17.280518 [debug] [Thread-3  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_daily_stocks_prices_created_at.fe2c4145f8"
+[0m15:06:17.287248 [debug] [Thread-4  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_daily_stocks_prices_date.892916b548"
+[0m15:06:17.294774 [debug] [Thread-2  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_daily_stocks_prices_high.b9afd5323b"
+[0m15:06:17.296119 [debug] [Thread-1  ]: Began executing node test.dbt_project.not_null_dwh_daily_stocks_prices_close.d90904a4f0
+[0m15:06:17.299644 [debug] [Thread-3  ]: Began executing node test.dbt_project.not_null_dwh_daily_stocks_prices_created_at.fe2c4145f8
+[0m15:06:17.304658 [debug] [Thread-1  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_daily_stocks_prices_close.d90904a4f0"
+[0m15:06:17.305705 [debug] [Thread-4  ]: Began executing node test.dbt_project.not_null_dwh_daily_stocks_prices_date.892916b548
+[0m15:06:17.309807 [debug] [Thread-3  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_daily_stocks_prices_created_at.fe2c4145f8"
+[0m15:06:17.310764 [debug] [Thread-2  ]: Began executing node test.dbt_project.not_null_dwh_daily_stocks_prices_high.b9afd5323b
+[0m15:06:17.316291 [debug] [Thread-4  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_daily_stocks_prices_date.892916b548"
+[0m15:06:17.317818 [debug] [Thread-1  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_daily_stocks_prices_close.d90904a4f0: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_daily_stocks_prices_close.d90904a4f0"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select close
+from `dwh`.`dwh_daily_stocks_prices`
+where close is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:17.322959 [debug] [Thread-2  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_daily_stocks_prices_high.b9afd5323b"
+[0m15:06:17.324505 [debug] [Thread-3  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_daily_stocks_prices_created_at.fe2c4145f8: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_daily_stocks_prices_created_at.fe2c4145f8"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select created_at
+from `dwh`.`dwh_daily_stocks_prices`
+where created_at is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:17.336972 [debug] [Thread-4  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_daily_stocks_prices_date.892916b548: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_daily_stocks_prices_date.892916b548"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select date
+from `dwh`.`dwh_daily_stocks_prices`
+where date is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:17.340540 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:17.343205 [debug] [Thread-2  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_daily_stocks_prices_high.b9afd5323b: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_daily_stocks_prices_high.b9afd5323b"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select high
+from `dwh`.`dwh_daily_stocks_prices`
+where high is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:17.347828 [info ] [Thread-1  ]: 16 of 43 PASS not_null_dwh_daily_stocks_prices_close ........................... [[32mPASS[0m in 0.09s]
+[0m15:06:17.349520 [debug] [Thread-3  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:17.351109 [debug] [Thread-4  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:17.353854 [debug] [Thread-1  ]: Finished running node test.dbt_project.not_null_dwh_daily_stocks_prices_close.d90904a4f0
+[0m15:06:17.356870 [info ] [Thread-3  ]: 17 of 43 PASS not_null_dwh_daily_stocks_prices_created_at ...................... [[32mPASS[0m in 0.10s]
+[0m15:06:17.358452 [debug] [Thread-2  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:17.361002 [info ] [Thread-4  ]: 18 of 43 PASS not_null_dwh_daily_stocks_prices_date ............................ [[32mPASS[0m in 0.10s]
+[0m15:06:17.362468 [debug] [Thread-1  ]: Began running node test.dbt_project.not_null_dwh_daily_stocks_prices_low.93a623fb5b
+[0m15:06:17.364039 [debug] [Thread-3  ]: Finished running node test.dbt_project.not_null_dwh_daily_stocks_prices_created_at.fe2c4145f8
+[0m15:06:17.367589 [info ] [Thread-2  ]: 19 of 43 PASS not_null_dwh_daily_stocks_prices_high ............................ [[32mPASS[0m in 0.11s]
+[0m15:06:17.370450 [debug] [Thread-4  ]: Finished running node test.dbt_project.not_null_dwh_daily_stocks_prices_date.892916b548
+[0m15:06:17.371785 [info ] [Thread-1  ]: 20 of 43 START test not_null_dwh_daily_stocks_prices_low ....................... [RUN]
+[0m15:06:17.373306 [debug] [Thread-3  ]: Began running node test.dbt_project.not_null_dwh_daily_stocks_prices_open.fc68b78b44
+[0m15:06:17.377153 [debug] [Thread-2  ]: Finished running node test.dbt_project.not_null_dwh_daily_stocks_prices_high.b9afd5323b
+[0m15:06:17.379777 [debug] [Thread-4  ]: Began running node test.dbt_project.not_null_dwh_daily_stocks_prices_symbol.c5da1a0ad9
+[0m15:06:17.381709 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_daily_stocks_prices_close.d90904a4f0, now test.dbt_project.not_null_dwh_daily_stocks_prices_low.93a623fb5b)
+[0m15:06:17.383809 [info ] [Thread-3  ]: 21 of 43 START test not_null_dwh_daily_stocks_prices_open ...................... [RUN]
+[0m15:06:17.386008 [debug] [Thread-2  ]: Began running node test.dbt_project.not_null_dwh_daily_stocks_prices_updated_at.b67e96841e
+[0m15:06:17.389020 [info ] [Thread-4  ]: 22 of 43 START test not_null_dwh_daily_stocks_prices_symbol .................... [RUN]
+[0m15:06:17.391293 [debug] [Thread-1  ]: Began compiling node test.dbt_project.not_null_dwh_daily_stocks_prices_low.93a623fb5b
+[0m15:06:17.392712 [debug] [Thread-3  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_daily_stocks_prices_created_at.fe2c4145f8, now test.dbt_project.not_null_dwh_daily_stocks_prices_open.fc68b78b44)
+[0m15:06:17.393894 [info ] [Thread-2  ]: 23 of 43 START test not_null_dwh_daily_stocks_prices_updated_at ................ [RUN]
+[0m15:06:17.395430 [debug] [Thread-4  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_daily_stocks_prices_date.892916b548, now test.dbt_project.not_null_dwh_daily_stocks_prices_symbol.c5da1a0ad9)
+[0m15:06:17.402942 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_daily_stocks_prices_low.93a623fb5b"
+[0m15:06:17.404302 [debug] [Thread-3  ]: Began compiling node test.dbt_project.not_null_dwh_daily_stocks_prices_open.fc68b78b44
+[0m15:06:17.405447 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_daily_stocks_prices_high.b9afd5323b, now test.dbt_project.not_null_dwh_daily_stocks_prices_updated_at.b67e96841e)
+[0m15:06:17.406607 [debug] [Thread-4  ]: Began compiling node test.dbt_project.not_null_dwh_daily_stocks_prices_symbol.c5da1a0ad9
+[0m15:06:17.414941 [debug] [Thread-3  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_daily_stocks_prices_open.fc68b78b44"
+[0m15:06:17.416486 [debug] [Thread-2  ]: Began compiling node test.dbt_project.not_null_dwh_daily_stocks_prices_updated_at.b67e96841e
+[0m15:06:17.417489 [debug] [Thread-1  ]: Began executing node test.dbt_project.not_null_dwh_daily_stocks_prices_low.93a623fb5b
+[0m15:06:17.425429 [debug] [Thread-4  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_daily_stocks_prices_symbol.c5da1a0ad9"
+[0m15:06:17.435127 [debug] [Thread-2  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_daily_stocks_prices_updated_at.b67e96841e"
+[0m15:06:17.436200 [debug] [Thread-3  ]: Began executing node test.dbt_project.not_null_dwh_daily_stocks_prices_open.fc68b78b44
+[0m15:06:17.440536 [debug] [Thread-1  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_daily_stocks_prices_low.93a623fb5b"
+[0m15:06:17.446460 [debug] [Thread-3  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_daily_stocks_prices_open.fc68b78b44"
+[0m15:06:17.448649 [debug] [Thread-2  ]: Began executing node test.dbt_project.not_null_dwh_daily_stocks_prices_updated_at.b67e96841e
+[0m15:06:17.449519 [debug] [Thread-4  ]: Began executing node test.dbt_project.not_null_dwh_daily_stocks_prices_symbol.c5da1a0ad9
+[0m15:06:17.455430 [debug] [Thread-2  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_daily_stocks_prices_updated_at.b67e96841e"
+[0m15:06:17.456253 [debug] [Thread-1  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_daily_stocks_prices_low.93a623fb5b: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_daily_stocks_prices_low.93a623fb5b"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select low
+from `dwh`.`dwh_daily_stocks_prices`
+where low is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:17.460428 [debug] [Thread-4  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_daily_stocks_prices_symbol.c5da1a0ad9"
+[0m15:06:17.461434 [debug] [Thread-3  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_daily_stocks_prices_open.fc68b78b44: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_daily_stocks_prices_open.fc68b78b44"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select open
+from `dwh`.`dwh_daily_stocks_prices`
+where open is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:17.469743 [debug] [Thread-2  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_daily_stocks_prices_updated_at.b67e96841e: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_daily_stocks_prices_updated_at.b67e96841e"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select updated_at
+from `dwh`.`dwh_daily_stocks_prices`
+where updated_at is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:17.474087 [debug] [Thread-4  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_daily_stocks_prices_symbol.c5da1a0ad9: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_daily_stocks_prices_symbol.c5da1a0ad9"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select symbol
+from `dwh`.`dwh_daily_stocks_prices`
+where symbol is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:17.477392 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:17.479334 [debug] [Thread-3  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:17.481101 [debug] [Thread-2  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:17.484887 [info ] [Thread-1  ]: 20 of 43 PASS not_null_dwh_daily_stocks_prices_low ............................. [[32mPASS[0m in 0.10s]
+[0m15:06:17.486693 [debug] [Thread-4  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:17.490108 [info ] [Thread-3  ]: 21 of 43 PASS not_null_dwh_daily_stocks_prices_open ............................ [[32mPASS[0m in 0.10s]
+[0m15:06:17.494150 [info ] [Thread-2  ]: 23 of 43 PASS not_null_dwh_daily_stocks_prices_updated_at ...................... [[32mPASS[0m in 0.09s]
+[0m15:06:17.496160 [debug] [Thread-1  ]: Finished running node test.dbt_project.not_null_dwh_daily_stocks_prices_low.93a623fb5b
+[0m15:06:17.498680 [info ] [Thread-4  ]: 22 of 43 PASS not_null_dwh_daily_stocks_prices_symbol .......................... [[32mPASS[0m in 0.10s]
+[0m15:06:17.500103 [debug] [Thread-3  ]: Finished running node test.dbt_project.not_null_dwh_daily_stocks_prices_open.fc68b78b44
+[0m15:06:17.501308 [debug] [Thread-2  ]: Finished running node test.dbt_project.not_null_dwh_daily_stocks_prices_updated_at.b67e96841e
+[0m15:06:17.502677 [debug] [Thread-1  ]: Began running node test.dbt_project.not_null_dwh_daily_stocks_prices_volume.862f320a0b
+[0m15:06:17.503803 [debug] [Thread-4  ]: Finished running node test.dbt_project.not_null_dwh_daily_stocks_prices_symbol.c5da1a0ad9
+[0m15:06:17.505039 [debug] [Thread-3  ]: Began running node test.dbt_project.not_null_dwh_stock_calificadores_action.88e1fd6e97
+[0m15:06:17.506187 [debug] [Thread-2  ]: Began running node test.dbt_project.not_null_dwh_stock_calificadores_created_at.2b253c7cd3
+[0m15:06:17.507209 [info ] [Thread-1  ]: 24 of 43 START test not_null_dwh_daily_stocks_prices_volume .................... [RUN]
+[0m15:06:17.508556 [debug] [Thread-4  ]: Began running node test.dbt_project.not_null_dwh_stock_calificadores_firm.bb3788c71a
+[0m15:06:17.509907 [info ] [Thread-3  ]: 25 of 43 START test not_null_dwh_stock_calificadores_action .................... [RUN]
+[0m15:06:17.511066 [info ] [Thread-2  ]: 26 of 43 START test not_null_dwh_stock_calificadores_created_at ................ [RUN]
+[0m15:06:17.512251 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_daily_stocks_prices_low.93a623fb5b, now test.dbt_project.not_null_dwh_daily_stocks_prices_volume.862f320a0b)
+[0m15:06:17.513341 [info ] [Thread-4  ]: 27 of 43 START test not_null_dwh_stock_calificadores_firm ...................... [RUN]
+[0m15:06:17.514609 [debug] [Thread-3  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_daily_stocks_prices_open.fc68b78b44, now test.dbt_project.not_null_dwh_stock_calificadores_action.88e1fd6e97)
+[0m15:06:17.519687 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_daily_stocks_prices_updated_at.b67e96841e, now test.dbt_project.not_null_dwh_stock_calificadores_created_at.2b253c7cd3)
+[0m15:06:17.520984 [debug] [Thread-1  ]: Began compiling node test.dbt_project.not_null_dwh_daily_stocks_prices_volume.862f320a0b
+[0m15:06:17.522292 [debug] [Thread-4  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_daily_stocks_prices_symbol.c5da1a0ad9, now test.dbt_project.not_null_dwh_stock_calificadores_firm.bb3788c71a)
+[0m15:06:17.523315 [debug] [Thread-3  ]: Began compiling node test.dbt_project.not_null_dwh_stock_calificadores_action.88e1fd6e97
+[0m15:06:17.524315 [debug] [Thread-2  ]: Began compiling node test.dbt_project.not_null_dwh_stock_calificadores_created_at.2b253c7cd3
+[0m15:06:17.531458 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_daily_stocks_prices_volume.862f320a0b"
+[0m15:06:17.532478 [debug] [Thread-4  ]: Began compiling node test.dbt_project.not_null_dwh_stock_calificadores_firm.bb3788c71a
+[0m15:06:17.539360 [debug] [Thread-3  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_stock_calificadores_action.88e1fd6e97"
+[0m15:06:17.552418 [debug] [Thread-2  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_stock_calificadores_created_at.2b253c7cd3"
+[0m15:06:17.564023 [debug] [Thread-4  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_stock_calificadores_firm.bb3788c71a"
+[0m15:06:17.565351 [debug] [Thread-1  ]: Began executing node test.dbt_project.not_null_dwh_daily_stocks_prices_volume.862f320a0b
+[0m15:06:17.567447 [debug] [Thread-3  ]: Began executing node test.dbt_project.not_null_dwh_stock_calificadores_action.88e1fd6e97
+[0m15:06:17.571805 [debug] [Thread-1  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_daily_stocks_prices_volume.862f320a0b"
+[0m15:06:17.573088 [debug] [Thread-2  ]: Began executing node test.dbt_project.not_null_dwh_stock_calificadores_created_at.2b253c7cd3
+[0m15:06:17.579230 [debug] [Thread-4  ]: Began executing node test.dbt_project.not_null_dwh_stock_calificadores_firm.bb3788c71a
+[0m15:06:17.578149 [debug] [Thread-3  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_stock_calificadores_action.88e1fd6e97"
+[0m15:06:17.584407 [debug] [Thread-2  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_stock_calificadores_created_at.2b253c7cd3"
+[0m15:06:17.589707 [debug] [Thread-4  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_stock_calificadores_firm.bb3788c71a"
+[0m15:06:17.590920 [debug] [Thread-1  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_daily_stocks_prices_volume.862f320a0b: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_daily_stocks_prices_volume.862f320a0b"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select volume
+from `dwh`.`dwh_daily_stocks_prices`
+where volume is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:17.594334 [debug] [Thread-3  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_stock_calificadores_action.88e1fd6e97: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_stock_calificadores_action.88e1fd6e97"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select action
+from `dwh`.`dwh_stock_calificadores`
+where action is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:17.596620 [debug] [Thread-2  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_stock_calificadores_created_at.2b253c7cd3: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_stock_calificadores_created_at.2b253c7cd3"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select created_at
+from `dwh`.`dwh_stock_calificadores`
+where created_at is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:17.597905 [debug] [Thread-4  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_stock_calificadores_firm.bb3788c71a: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_stock_calificadores_firm.bb3788c71a"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select firm
+from `dwh`.`dwh_stock_calificadores`
+where firm is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:17.605168 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:17.608450 [debug] [Thread-3  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:17.612515 [info ] [Thread-1  ]: 24 of 43 PASS not_null_dwh_daily_stocks_prices_volume .......................... [[32mPASS[0m in 0.10s]
+[0m15:06:17.614678 [debug] [Thread-2  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:17.616146 [debug] [Thread-4  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:17.620897 [info ] [Thread-3  ]: 25 of 43 PASS not_null_dwh_stock_calificadores_action .......................... [[32mPASS[0m in 0.11s]
+[0m15:06:17.622749 [debug] [Thread-1  ]: Finished running node test.dbt_project.not_null_dwh_daily_stocks_prices_volume.862f320a0b
+[0m15:06:17.625762 [info ] [Thread-2  ]: 26 of 43 PASS not_null_dwh_stock_calificadores_created_at ...................... [[32mPASS[0m in 0.11s]
+[0m15:06:17.629078 [info ] [Thread-4  ]: 27 of 43 PASS not_null_dwh_stock_calificadores_firm ............................ [[32mPASS[0m in 0.11s]
+[0m15:06:17.630582 [debug] [Thread-3  ]: Finished running node test.dbt_project.not_null_dwh_stock_calificadores_action.88e1fd6e97
+[0m15:06:17.631651 [debug] [Thread-1  ]: Began running node test.dbt_project.not_null_dwh_stock_calificadores_gradedate.dd4dcc27a8
+[0m15:06:17.632964 [debug] [Thread-2  ]: Finished running node test.dbt_project.not_null_dwh_stock_calificadores_created_at.2b253c7cd3
+[0m15:06:17.634066 [debug] [Thread-4  ]: Finished running node test.dbt_project.not_null_dwh_stock_calificadores_firm.bb3788c71a
+[0m15:06:17.635175 [debug] [Thread-3  ]: Began running node test.dbt_project.not_null_dwh_stock_calificadores_symbol.af15da1f66
+[0m15:06:17.636088 [info ] [Thread-1  ]: 28 of 43 START test not_null_dwh_stock_calificadores_gradedate ................. [RUN]
+[0m15:06:17.637015 [debug] [Thread-2  ]: Began running node test.dbt_project.not_null_dwh_stock_calificadores_tograde.8c407df275
+[0m15:06:17.637988 [debug] [Thread-4  ]: Began running node test.dbt_project.not_null_dwh_stock_calificadores_updated_at.11167e59c3
+[0m15:06:17.638831 [info ] [Thread-3  ]: 29 of 43 START test not_null_dwh_stock_calificadores_symbol .................... [RUN]
+[0m15:06:17.639933 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_daily_stocks_prices_volume.862f320a0b, now test.dbt_project.not_null_dwh_stock_calificadores_gradedate.dd4dcc27a8)
+[0m15:06:17.640849 [info ] [Thread-2  ]: 30 of 43 START test not_null_dwh_stock_calificadores_tograde ................... [RUN]
+[0m15:06:17.641815 [info ] [Thread-4  ]: 31 of 43 START test not_null_dwh_stock_calificadores_updated_at ................ [RUN]
+[0m15:06:17.642929 [debug] [Thread-3  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_stock_calificadores_action.88e1fd6e97, now test.dbt_project.not_null_dwh_stock_calificadores_symbol.af15da1f66)
+[0m15:06:17.643814 [debug] [Thread-1  ]: Began compiling node test.dbt_project.not_null_dwh_stock_calificadores_gradedate.dd4dcc27a8
+[0m15:06:17.644662 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_stock_calificadores_created_at.2b253c7cd3, now test.dbt_project.not_null_dwh_stock_calificadores_tograde.8c407df275)
+[0m15:06:17.645599 [debug] [Thread-4  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_stock_calificadores_firm.bb3788c71a, now test.dbt_project.not_null_dwh_stock_calificadores_updated_at.11167e59c3)
+[0m15:06:17.646455 [debug] [Thread-3  ]: Began compiling node test.dbt_project.not_null_dwh_stock_calificadores_symbol.af15da1f66
+[0m15:06:17.653158 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_stock_calificadores_gradedate.dd4dcc27a8"
+[0m15:06:17.654233 [debug] [Thread-2  ]: Began compiling node test.dbt_project.not_null_dwh_stock_calificadores_tograde.8c407df275
+[0m15:06:17.655211 [debug] [Thread-4  ]: Began compiling node test.dbt_project.not_null_dwh_stock_calificadores_updated_at.11167e59c3
+[0m15:06:17.661584 [debug] [Thread-3  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_stock_calificadores_symbol.af15da1f66"
+[0m15:06:17.668094 [debug] [Thread-2  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_stock_calificadores_tograde.8c407df275"
+[0m15:06:17.674034 [debug] [Thread-4  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_stock_calificadores_updated_at.11167e59c3"
+[0m15:06:17.675029 [debug] [Thread-1  ]: Began executing node test.dbt_project.not_null_dwh_stock_calificadores_gradedate.dd4dcc27a8
+[0m15:06:17.681173 [debug] [Thread-1  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_stock_calificadores_gradedate.dd4dcc27a8"
+[0m15:06:17.682684 [debug] [Thread-3  ]: Began executing node test.dbt_project.not_null_dwh_stock_calificadores_symbol.af15da1f66
+[0m15:06:17.683454 [debug] [Thread-4  ]: Began executing node test.dbt_project.not_null_dwh_stock_calificadores_updated_at.11167e59c3
+[0m15:06:17.684168 [debug] [Thread-2  ]: Began executing node test.dbt_project.not_null_dwh_stock_calificadores_tograde.8c407df275
+[0m15:06:17.687925 [debug] [Thread-3  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_stock_calificadores_symbol.af15da1f66"
+[0m15:06:17.689116 [debug] [Thread-1  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_stock_calificadores_gradedate.dd4dcc27a8: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_stock_calificadores_gradedate.dd4dcc27a8"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select gradedate
+from `dwh`.`dwh_stock_calificadores`
+where gradedate is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:17.692918 [debug] [Thread-4  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_stock_calificadores_updated_at.11167e59c3"
+[0m15:06:17.697063 [debug] [Thread-2  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_stock_calificadores_tograde.8c407df275"
+[0m15:06:17.701445 [debug] [Thread-3  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_stock_calificadores_symbol.af15da1f66: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_stock_calificadores_symbol.af15da1f66"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select symbol
+from `dwh`.`dwh_stock_calificadores`
+where symbol is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:17.703850 [debug] [Thread-4  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_stock_calificadores_updated_at.11167e59c3: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_stock_calificadores_updated_at.11167e59c3"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select updated_at
+from `dwh`.`dwh_stock_calificadores`
+where updated_at is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:17.707291 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:17.710403 [debug] [Thread-2  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_stock_calificadores_tograde.8c407df275: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_stock_calificadores_tograde.8c407df275"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select tograde
+from `dwh`.`dwh_stock_calificadores`
+where tograde is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:17.711932 [debug] [Thread-3  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:17.715080 [info ] [Thread-1  ]: 28 of 43 PASS not_null_dwh_stock_calificadores_gradedate ....................... [[32mPASS[0m in 0.08s]
+[0m15:06:17.718057 [debug] [Thread-4  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:17.724125 [info ] [Thread-3  ]: 29 of 43 PASS not_null_dwh_stock_calificadores_symbol .......................... [[32mPASS[0m in 0.08s]
+[0m15:06:17.725553 [debug] [Thread-2  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:17.726769 [debug] [Thread-1  ]: Finished running node test.dbt_project.not_null_dwh_stock_calificadores_gradedate.dd4dcc27a8
+[0m15:06:17.729092 [info ] [Thread-4  ]: 31 of 43 PASS not_null_dwh_stock_calificadores_updated_at ...................... [[32mPASS[0m in 0.08s]
+[0m15:06:17.730134 [debug] [Thread-3  ]: Finished running node test.dbt_project.not_null_dwh_stock_calificadores_symbol.af15da1f66
+[0m15:06:17.732426 [info ] [Thread-2  ]: 30 of 43 PASS not_null_dwh_stock_calificadores_tograde ......................... [[32mPASS[0m in 0.09s]
+[0m15:06:17.734651 [debug] [Thread-1  ]: Began running node test.dbt_project.not_null_dwh_stock_holders_created_at.c47950305b
+[0m15:06:17.735813 [debug] [Thread-4  ]: Finished running node test.dbt_project.not_null_dwh_stock_calificadores_updated_at.11167e59c3
+[0m15:06:17.736697 [debug] [Thread-3  ]: Began running node test.dbt_project.not_null_dwh_stock_holders_date_reported.79eb8f4fdf
+[0m15:06:17.737674 [debug] [Thread-2  ]: Finished running node test.dbt_project.not_null_dwh_stock_calificadores_tograde.8c407df275
+[0m15:06:17.738511 [info ] [Thread-1  ]: 32 of 43 START test not_null_dwh_stock_holders_created_at ...................... [RUN]
+[0m15:06:17.739401 [debug] [Thread-4  ]: Began running node test.dbt_project.not_null_dwh_stock_holders_holder.3335f59009
+[0m15:06:17.740433 [info ] [Thread-3  ]: 33 of 43 START test not_null_dwh_stock_holders_date_reported ................... [RUN]
+[0m15:06:17.741593 [debug] [Thread-2  ]: Began running node test.dbt_project.not_null_dwh_stock_holders_shares.e773f44432
+[0m15:06:17.742694 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_stock_calificadores_gradedate.dd4dcc27a8, now test.dbt_project.not_null_dwh_stock_holders_created_at.c47950305b)
+[0m15:06:17.743570 [info ] [Thread-4  ]: 34 of 43 START test not_null_dwh_stock_holders_holder .......................... [RUN]
+[0m15:06:17.744566 [debug] [Thread-3  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_stock_calificadores_symbol.af15da1f66, now test.dbt_project.not_null_dwh_stock_holders_date_reported.79eb8f4fdf)
+[0m15:06:17.745508 [info ] [Thread-2  ]: 35 of 43 START test not_null_dwh_stock_holders_shares .......................... [RUN]
+[0m15:06:17.746532 [debug] [Thread-1  ]: Began compiling node test.dbt_project.not_null_dwh_stock_holders_created_at.c47950305b
+[0m15:06:17.747495 [debug] [Thread-4  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_stock_calificadores_updated_at.11167e59c3, now test.dbt_project.not_null_dwh_stock_holders_holder.3335f59009)
+[0m15:06:17.748301 [debug] [Thread-3  ]: Began compiling node test.dbt_project.not_null_dwh_stock_holders_date_reported.79eb8f4fdf
+[0m15:06:17.749198 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_stock_calificadores_tograde.8c407df275, now test.dbt_project.not_null_dwh_stock_holders_shares.e773f44432)
+[0m15:06:17.755485 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_stock_holders_created_at.c47950305b"
+[0m15:06:17.756616 [debug] [Thread-4  ]: Began compiling node test.dbt_project.not_null_dwh_stock_holders_holder.3335f59009
+[0m15:06:17.762837 [debug] [Thread-3  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_stock_holders_date_reported.79eb8f4fdf"
+[0m15:06:17.763805 [debug] [Thread-2  ]: Began compiling node test.dbt_project.not_null_dwh_stock_holders_shares.e773f44432
+[0m15:06:17.774143 [debug] [Thread-4  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_stock_holders_holder.3335f59009"
+[0m15:06:17.798935 [debug] [Thread-1  ]: Began executing node test.dbt_project.not_null_dwh_stock_holders_created_at.c47950305b
+[0m15:06:17.946014 [debug] [Thread-2  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_stock_holders_shares.e773f44432"
+[0m15:06:17.946988 [debug] [Thread-3  ]: Began executing node test.dbt_project.not_null_dwh_stock_holders_date_reported.79eb8f4fdf
+[0m15:06:17.952366 [debug] [Thread-1  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_stock_holders_created_at.c47950305b"
+[0m15:06:17.953661 [debug] [Thread-4  ]: Began executing node test.dbt_project.not_null_dwh_stock_holders_holder.3335f59009
+[0m15:06:17.962580 [debug] [Thread-3  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_stock_holders_date_reported.79eb8f4fdf"
+[0m15:06:17.964311 [debug] [Thread-2  ]: Began executing node test.dbt_project.not_null_dwh_stock_holders_shares.e773f44432
+[0m15:06:17.974671 [debug] [Thread-4  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_stock_holders_holder.3335f59009"
+[0m15:06:17.976691 [debug] [Thread-1  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_stock_holders_created_at.c47950305b: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_stock_holders_created_at.c47950305b"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select created_at
+from `dwh`.`dwh_stock_holders`
+where created_at is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:17.986389 [debug] [Thread-2  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_stock_holders_shares.e773f44432"
+[0m15:06:17.993525 [debug] [Thread-3  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_stock_holders_date_reported.79eb8f4fdf: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_stock_holders_date_reported.79eb8f4fdf"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select date_reported
+from `dwh`.`dwh_stock_holders`
+where date_reported is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:17.998815 [debug] [Thread-4  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_stock_holders_holder.3335f59009: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_stock_holders_holder.3335f59009"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select holder
+from `dwh`.`dwh_stock_holders`
+where holder is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:18.003576 [debug] [Thread-2  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_stock_holders_shares.e773f44432: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_stock_holders_shares.e773f44432"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select shares
+from `dwh`.`dwh_stock_holders`
+where shares is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:18.018837 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.02 seconds
+[0m15:06:18.020693 [debug] [Thread-4  ]: dbt_clickhouse adapter: SQL status: OK in 0.02 seconds
+[0m15:06:18.022129 [debug] [Thread-2  ]: dbt_clickhouse adapter: SQL status: OK in 0.02 seconds
+[0m15:06:18.023560 [debug] [Thread-3  ]: dbt_clickhouse adapter: SQL status: OK in 0.02 seconds
+[0m15:06:18.026711 [info ] [Thread-1  ]: 32 of 43 PASS not_null_dwh_stock_holders_created_at ............................ [[32mPASS[0m in 0.28s]
+[0m15:06:18.030812 [info ] [Thread-4  ]: 34 of 43 PASS not_null_dwh_stock_holders_holder ................................ [[32mPASS[0m in 0.28s]
+[0m15:06:18.043480 [debug] [Thread-4  ]: Finished running node test.dbt_project.not_null_dwh_stock_holders_holder.3335f59009
+[0m15:06:18.039662 [info ] [Thread-3  ]: 33 of 43 PASS not_null_dwh_stock_holders_date_reported ......................... [[32mPASS[0m in 0.30s]
+[0m15:06:18.041794 [debug] [Thread-1  ]: Finished running node test.dbt_project.not_null_dwh_stock_holders_created_at.c47950305b
+[0m15:06:18.036447 [info ] [Thread-2  ]: 35 of 43 PASS not_null_dwh_stock_holders_shares ................................ [[32mPASS[0m in 0.29s]
+[0m15:06:18.050367 [debug] [Thread-4  ]: Began running node test.dbt_project.not_null_dwh_stock_holders_symbol.9d91d46917
+[0m15:06:18.052229 [debug] [Thread-3  ]: Finished running node test.dbt_project.not_null_dwh_stock_holders_date_reported.79eb8f4fdf
+[0m15:06:18.053402 [debug] [Thread-1  ]: Began running node test.dbt_project.not_null_dwh_stock_holders_updated_at.b21cf10017
+[0m15:06:18.054926 [debug] [Thread-2  ]: Finished running node test.dbt_project.not_null_dwh_stock_holders_shares.e773f44432
+[0m15:06:18.056148 [info ] [Thread-4  ]: 36 of 43 START test not_null_dwh_stock_holders_symbol .......................... [RUN]
+[0m15:06:18.057579 [debug] [Thread-3  ]: Began running node test.dbt_project.not_null_dwh_stock_holders_value.6104a7b4b5
+[0m15:06:18.058734 [info ] [Thread-1  ]: 37 of 43 START test not_null_dwh_stock_holders_updated_at ...................... [RUN]
+[0m15:06:18.060172 [debug] [Thread-2  ]: Began running node test.dbt_project.not_null_vw_monthly_stock_summary_avg_close.59e8b62c8c
+[0m15:06:18.061404 [debug] [Thread-4  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_stock_holders_holder.3335f59009, now test.dbt_project.not_null_dwh_stock_holders_symbol.9d91d46917)
+[0m15:06:18.062448 [info ] [Thread-3  ]: 38 of 43 START test not_null_dwh_stock_holders_value ........................... [RUN]
+[0m15:06:18.063534 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_stock_holders_created_at.c47950305b, now test.dbt_project.not_null_dwh_stock_holders_updated_at.b21cf10017)
+[0m15:06:18.064553 [info ] [Thread-2  ]: 39 of 43 START test not_null_vw_monthly_stock_summary_avg_close ................ [RUN]
+[0m15:06:18.065780 [debug] [Thread-4  ]: Began compiling node test.dbt_project.not_null_dwh_stock_holders_symbol.9d91d46917
+[0m15:06:18.066847 [debug] [Thread-3  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_stock_holders_date_reported.79eb8f4fdf, now test.dbt_project.not_null_dwh_stock_holders_value.6104a7b4b5)
+[0m15:06:18.067820 [debug] [Thread-1  ]: Began compiling node test.dbt_project.not_null_dwh_stock_holders_updated_at.b21cf10017
+[0m15:06:18.069305 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_stock_holders_shares.e773f44432, now test.dbt_project.not_null_vw_monthly_stock_summary_avg_close.59e8b62c8c)
+[0m15:06:18.078084 [debug] [Thread-4  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_stock_holders_symbol.9d91d46917"
+[0m15:06:18.079335 [debug] [Thread-3  ]: Began compiling node test.dbt_project.not_null_dwh_stock_holders_value.6104a7b4b5
+[0m15:06:18.088168 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_stock_holders_updated_at.b21cf10017"
+[0m15:06:18.089705 [debug] [Thread-2  ]: Began compiling node test.dbt_project.not_null_vw_monthly_stock_summary_avg_close.59e8b62c8c
+[0m15:06:18.107617 [debug] [Thread-3  ]: Writing injected SQL for node "test.dbt_project.not_null_dwh_stock_holders_value.6104a7b4b5"
+[0m15:06:18.108646 [debug] [Thread-4  ]: Began executing node test.dbt_project.not_null_dwh_stock_holders_symbol.9d91d46917
+[0m15:06:18.118765 [debug] [Thread-2  ]: Writing injected SQL for node "test.dbt_project.not_null_vw_monthly_stock_summary_avg_close.59e8b62c8c"
+[0m15:06:18.120440 [debug] [Thread-1  ]: Began executing node test.dbt_project.not_null_dwh_stock_holders_updated_at.b21cf10017
+[0m15:06:18.126051 [debug] [Thread-4  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_stock_holders_symbol.9d91d46917"
+[0m15:06:18.128202 [debug] [Thread-3  ]: Began executing node test.dbt_project.not_null_dwh_stock_holders_value.6104a7b4b5
+[0m15:06:18.133225 [debug] [Thread-1  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_stock_holders_updated_at.b21cf10017"
+[0m15:06:18.136742 [debug] [Thread-2  ]: Began executing node test.dbt_project.not_null_vw_monthly_stock_summary_avg_close.59e8b62c8c
+[0m15:06:18.141264 [debug] [Thread-3  ]: Writing runtime sql for node "test.dbt_project.not_null_dwh_stock_holders_value.6104a7b4b5"
+[0m15:06:18.143154 [debug] [Thread-4  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_stock_holders_symbol.9d91d46917: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_stock_holders_symbol.9d91d46917"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select symbol
+from `dwh`.`dwh_stock_holders`
+where symbol is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:18.150276 [debug] [Thread-2  ]: Writing runtime sql for node "test.dbt_project.not_null_vw_monthly_stock_summary_avg_close.59e8b62c8c"
+[0m15:06:18.151936 [debug] [Thread-1  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_stock_holders_updated_at.b21cf10017: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_stock_holders_updated_at.b21cf10017"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select updated_at
+from `dwh`.`dwh_stock_holders`
+where updated_at is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:18.165331 [debug] [Thread-3  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_dwh_stock_holders_value.6104a7b4b5: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_dwh_stock_holders_value.6104a7b4b5"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select value
+from `dwh`.`dwh_stock_holders`
+where value is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:18.193857 [debug] [Thread-4  ]: dbt_clickhouse adapter: SQL status: OK in 0.03 seconds
+[0m15:06:18.205275 [debug] [Thread-2  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_vw_monthly_stock_summary_avg_close.59e8b62c8c: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_vw_monthly_stock_summary_avg_close.59e8b62c8c"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select avg_close
+from `dwh`.`vw_monthly_stock_summary`
+where avg_close is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:18.207439 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.04 seconds
+[0m15:06:18.212358 [info ] [Thread-4  ]: 36 of 43 PASS not_null_dwh_stock_holders_symbol ................................ [[32mPASS[0m in 0.15s]
+[0m15:06:18.220478 [debug] [Thread-3  ]: dbt_clickhouse adapter: SQL status: OK in 0.02 seconds
+[0m15:06:18.227738 [info ] [Thread-1  ]: 37 of 43 PASS not_null_dwh_stock_holders_updated_at ............................ [[32mPASS[0m in 0.16s]
+[0m15:06:18.233357 [debug] [Thread-4  ]: Finished running node test.dbt_project.not_null_dwh_stock_holders_symbol.9d91d46917
+[0m15:06:18.254181 [debug] [Thread-4  ]: Began running node test.dbt_project.not_null_vw_monthly_stock_summary_avg_open.1f15f1a405
+[0m15:06:18.244451 [debug] [Thread-1  ]: Finished running node test.dbt_project.not_null_dwh_stock_holders_updated_at.b21cf10017
+[0m15:06:18.240824 [info ] [Thread-3  ]: 38 of 43 PASS not_null_dwh_stock_holders_value ................................. [[32mPASS[0m in 0.17s]
+[0m15:06:18.280610 [debug] [Thread-3  ]: Finished running node test.dbt_project.not_null_dwh_stock_holders_value.6104a7b4b5
+[0m15:06:18.273860 [debug] [Thread-1  ]: Began running node test.dbt_project.not_null_vw_monthly_stock_summary_avg_volume.b9e5ed1d14
+[0m15:06:18.266177 [info ] [Thread-4  ]: 40 of 43 START test not_null_vw_monthly_stock_summary_avg_open ................. [RUN]
+[0m15:06:18.286110 [debug] [Thread-3  ]: Began running node test.dbt_project.not_null_vw_monthly_stock_summary_symbol.bd38d9b307
+[0m15:06:18.288366 [info ] [Thread-1  ]: 41 of 43 START test not_null_vw_monthly_stock_summary_avg_volume ............... [RUN]
+[0m15:06:18.290385 [debug] [Thread-4  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_stock_holders_symbol.9d91d46917, now test.dbt_project.not_null_vw_monthly_stock_summary_avg_open.1f15f1a405)
+[0m15:06:18.291712 [info ] [Thread-3  ]: 42 of 43 START test not_null_vw_monthly_stock_summary_symbol ................... [RUN]
+[0m15:06:18.293087 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_stock_holders_updated_at.b21cf10017, now test.dbt_project.not_null_vw_monthly_stock_summary_avg_volume.b9e5ed1d14)
+[0m15:06:18.294084 [debug] [Thread-4  ]: Began compiling node test.dbt_project.not_null_vw_monthly_stock_summary_avg_open.1f15f1a405
+[0m15:06:18.295383 [debug] [Thread-3  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dwh_stock_holders_value.6104a7b4b5, now test.dbt_project.not_null_vw_monthly_stock_summary_symbol.bd38d9b307)
+[0m15:06:18.296446 [debug] [Thread-1  ]: Began compiling node test.dbt_project.not_null_vw_monthly_stock_summary_avg_volume.b9e5ed1d14
+[0m15:06:18.306064 [debug] [Thread-4  ]: Writing injected SQL for node "test.dbt_project.not_null_vw_monthly_stock_summary_avg_open.1f15f1a405"
+[0m15:06:18.307242 [debug] [Thread-3  ]: Began compiling node test.dbt_project.not_null_vw_monthly_stock_summary_symbol.bd38d9b307
+[0m15:06:18.317168 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_project.not_null_vw_monthly_stock_summary_avg_volume.b9e5ed1d14"
+[0m15:06:18.319317 [debug] [Thread-2  ]: dbt_clickhouse adapter: SQL status: OK in 0.10 seconds
+[0m15:06:18.326490 [debug] [Thread-3  ]: Writing injected SQL for node "test.dbt_project.not_null_vw_monthly_stock_summary_symbol.bd38d9b307"
+[0m15:06:18.328109 [debug] [Thread-4  ]: Began executing node test.dbt_project.not_null_vw_monthly_stock_summary_avg_open.1f15f1a405
+[0m15:06:18.330915 [info ] [Thread-2  ]: 39 of 43 PASS not_null_vw_monthly_stock_summary_avg_close ...................... [[32mPASS[0m in 0.26s]
+[0m15:06:18.332561 [debug] [Thread-1  ]: Began executing node test.dbt_project.not_null_vw_monthly_stock_summary_avg_volume.b9e5ed1d14
+[0m15:06:18.336809 [debug] [Thread-4  ]: Writing runtime sql for node "test.dbt_project.not_null_vw_monthly_stock_summary_avg_open.1f15f1a405"
+[0m15:06:18.338119 [debug] [Thread-2  ]: Finished running node test.dbt_project.not_null_vw_monthly_stock_summary_avg_close.59e8b62c8c
+[0m15:06:18.338682 [debug] [Thread-3  ]: Began executing node test.dbt_project.not_null_vw_monthly_stock_summary_symbol.bd38d9b307
+[0m15:06:18.343015 [debug] [Thread-1  ]: Writing runtime sql for node "test.dbt_project.not_null_vw_monthly_stock_summary_avg_volume.b9e5ed1d14"
+[0m15:06:18.344389 [debug] [Thread-2  ]: Began running node test.dbt_project.unique_vw_monthly_stock_summary_symbol.955276c5c6
+[0m15:06:18.348540 [debug] [Thread-3  ]: Writing runtime sql for node "test.dbt_project.not_null_vw_monthly_stock_summary_symbol.bd38d9b307"
+[0m15:06:18.349633 [debug] [Thread-4  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_vw_monthly_stock_summary_avg_open.1f15f1a405: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_vw_monthly_stock_summary_avg_open.1f15f1a405"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select avg_open
+from `dwh`.`vw_monthly_stock_summary`
+where avg_open is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:18.350665 [info ] [Thread-2  ]: 43 of 43 START test unique_vw_monthly_stock_summary_symbol ..................... [RUN]
+[0m15:06:18.351918 [debug] [Thread-1  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_vw_monthly_stock_summary_avg_volume.b9e5ed1d14: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_vw_monthly_stock_summary_avg_volume.b9e5ed1d14"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select avg_volume
+from `dwh`.`vw_monthly_stock_summary`
+where avg_volume is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:18.353975 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_vw_monthly_stock_summary_avg_close.59e8b62c8c, now test.dbt_project.unique_vw_monthly_stock_summary_symbol.955276c5c6)
+[0m15:06:18.355087 [debug] [Thread-3  ]: dbt_clickhouse adapter: On test.dbt_project.not_null_vw_monthly_stock_summary_symbol.bd38d9b307: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_vw_monthly_stock_summary_symbol.bd38d9b307"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select symbol
+from `dwh`.`vw_monthly_stock_summary`
+where symbol is null
+
+
+
+    ) dbt_internal_test...
+[0m15:06:18.357431 [debug] [Thread-2  ]: Began compiling node test.dbt_project.unique_vw_monthly_stock_summary_symbol.955276c5c6
+[0m15:06:18.371175 [debug] [Thread-2  ]: Writing injected SQL for node "test.dbt_project.unique_vw_monthly_stock_summary_symbol.955276c5c6"
+[0m15:06:18.372560 [debug] [Thread-4  ]: dbt_clickhouse adapter: SQL status: OK in 0.02 seconds
+[0m15:06:18.373628 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.02 seconds
+[0m15:06:18.374703 [debug] [Thread-3  ]: dbt_clickhouse adapter: SQL status: OK in 0.02 seconds
+[0m15:06:18.378064 [info ] [Thread-4  ]: 40 of 43 PASS not_null_vw_monthly_stock_summary_avg_open ....................... [[32mPASS[0m in 0.09s]
+[0m15:06:18.379831 [debug] [Thread-2  ]: Began executing node test.dbt_project.unique_vw_monthly_stock_summary_symbol.955276c5c6
+[0m15:06:18.382089 [info ] [Thread-1  ]: 41 of 43 PASS not_null_vw_monthly_stock_summary_avg_volume ..................... [[32mPASS[0m in 0.09s]
+[0m15:06:18.384594 [info ] [Thread-3  ]: 42 of 43 PASS not_null_vw_monthly_stock_summary_symbol ......................... [[32mPASS[0m in 0.09s]
+[0m15:06:18.385850 [debug] [Thread-4  ]: Finished running node test.dbt_project.not_null_vw_monthly_stock_summary_avg_open.1f15f1a405
+[0m15:06:18.389902 [debug] [Thread-2  ]: Writing runtime sql for node "test.dbt_project.unique_vw_monthly_stock_summary_symbol.955276c5c6"
+[0m15:06:18.392757 [debug] [Thread-1  ]: Finished running node test.dbt_project.not_null_vw_monthly_stock_summary_avg_volume.b9e5ed1d14
+[0m15:06:18.394816 [debug] [Thread-3  ]: Finished running node test.dbt_project.not_null_vw_monthly_stock_summary_symbol.bd38d9b307
+[0m15:06:18.398089 [debug] [Thread-2  ]: dbt_clickhouse adapter: On test.dbt_project.unique_vw_monthly_stock_summary_symbol.955276c5c6: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.unique_vw_monthly_stock_summary_symbol.955276c5c6"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    symbol as unique_field,
+    count(*) as n_records
+
+from `dwh`.`vw_monthly_stock_summary`
+where symbol is not null
+group by symbol
+having count(*) > 1
+
+
+
+    ) dbt_internal_test...
+[0m15:06:18.443970 [debug] [Thread-2  ]: dbt_clickhouse adapter: SQL status: OK in 0.04 seconds
+[0m15:06:18.448106 [info ] [Thread-2  ]: 43 of 43 PASS unique_vw_monthly_stock_summary_symbol ........................... [[32mPASS[0m in 0.09s]
+[0m15:06:18.452257 [debug] [Thread-2  ]: Finished running node test.dbt_project.unique_vw_monthly_stock_summary_symbol.955276c5c6
+[0m15:06:18.457950 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:06:18.459314 [debug] [MainThread]: Connection 'test.dbt_project.not_null_vw_monthly_stock_summary_avg_volume.b9e5ed1d14' was left open.
+[0m15:06:18.460358 [debug] [MainThread]: On test.dbt_project.not_null_vw_monthly_stock_summary_avg_volume.b9e5ed1d14: Close
+[0m15:06:18.461438 [debug] [MainThread]: Connection 'test.dbt_project.unique_vw_monthly_stock_summary_symbol.955276c5c6' was left open.
+[0m15:06:18.462823 [debug] [MainThread]: On test.dbt_project.unique_vw_monthly_stock_summary_symbol.955276c5c6: Close
+[0m15:06:18.463860 [debug] [MainThread]: Connection 'test.dbt_project.not_null_vw_monthly_stock_summary_symbol.bd38d9b307' was left open.
+[0m15:06:18.464855 [debug] [MainThread]: On test.dbt_project.not_null_vw_monthly_stock_summary_symbol.bd38d9b307: Close
+[0m15:06:18.465583 [debug] [MainThread]: Connection 'test.dbt_project.not_null_vw_monthly_stock_summary_avg_open.1f15f1a405' was left open.
+[0m15:06:18.466447 [debug] [MainThread]: On test.dbt_project.not_null_vw_monthly_stock_summary_avg_open.1f15f1a405: Close
+[0m15:06:18.468333 [info ] [MainThread]: 
+[0m15:06:18.470144 [info ] [MainThread]: Finished running 43 data tests in 0 hours 0 minutes and 4.14 seconds (4.14s).
+[0m15:06:18.483458 [debug] [MainThread]: Command end result
+[0m15:06:18.652749 [info ] [MainThread]: 
+[0m15:06:18.654783 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:06:18.655910 [info ] [MainThread]: 
+[0m15:06:18.656994 [info ] [MainThread]: Done. PASS=43 WARN=0 ERROR=0 SKIP=0 TOTAL=43
+[0m15:06:18.660603 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 5.49756, "process_user_time": 6.527848, "process_kernel_time": 2.197787, "process_mem_max_rss": "315600", "process_in_blocks": "6336", "process_out_blocks": "1640"}
+[0m15:06:18.662354 [debug] [MainThread]: Command `dbt test` succeeded at 15:06:18.662077 after 5.50 seconds
+[0m15:06:18.663467 [debug] [MainThread]: Flushing usage events
+[0m15:06:25.135737 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 15:06:25.170455 | 52450a15-0cdf-4c2d-bf37-38a5d93a12bf ==============================
+[0m15:06:25.170455 [info ] [MainThread]: Running with dbt=1.8.7
+[0m15:06:25.172629 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/opt/airflow/logs', 'profiles_dir': '/home/airflow/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run --profiles-dir /home/airflow/.dbt --project-dir /opt/airflow', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:06:25.504180 [info ] [MainThread]: Registered adapter: clickhouse=1.8.4
+[0m15:06:25.525656 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m15:06:25.854423 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:06:25.856156 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:06:26.191020 [info ] [MainThread]: Found 7 models, 43 data tests, 458 macros
+[0m15:06:26.195716 [info ] [MainThread]: 
+[0m15:06:26.197111 [debug] [MainThread]: Acquiring new clickhouse connection 'master'
+[0m15:06:26.213647 [debug] [ThreadPool]: Acquiring new clickhouse connection 'list_'
+[0m15:06:26.233608 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:06:27.245264 [debug] [ThreadPool]: dbt_clickhouse adapter: On list_: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_"} */
+
+    select name from system.databases
+  ...
+[0m15:06:27.252499 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:27.282511 [debug] [ThreadPool]: Acquiring new clickhouse connection 'list__dwh'
+[0m15:06:27.302700 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:06:27.352709 [debug] [ThreadPool]: dbt_clickhouse adapter: On list__dwh: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list__dwh"} */
+select
+      t.name as name,
+      t.database as schema,
+      multiIf(
+        engine in ('MaterializedView', 'View'), 'view',
+        engine = 'Dictionary', 'dictionary',
+        'table'
+      ) as type,
+      db.engine as db_engine,0 as is_on_cluster
+          from system.tables as t join system.databases as db on t.database = db.name
+        where schema = 'dwh'
+      
+
+  ...
+[0m15:06:27.363897 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:27.369404 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:06:27.370964 [info ] [MainThread]: 
+[0m15:06:27.387248 [debug] [Thread-1  ]: Began running node model.dbt_project.dwh_bank_basic_info
+[0m15:06:27.388458 [debug] [Thread-2  ]: Began running node model.dbt_project.dwh_bank_fundamentals
+[0m15:06:27.389390 [debug] [Thread-3  ]: Began running node model.dbt_project.dwh_bank_stocks
+[0m15:06:27.390204 [debug] [Thread-4  ]: Began running node model.dbt_project.dwh_daily_stocks_prices
+[0m15:06:27.391536 [info ] [Thread-1  ]: 1 of 7 START sql view model `dwh`.`dwh_bank_basic_info` ........................ [RUN]
+[0m15:06:27.392906 [info ] [Thread-2  ]: 2 of 7 START sql view model `dwh`.`dwh_bank_fundamentals` ...................... [RUN]
+[0m15:06:27.394750 [info ] [Thread-3  ]: 3 of 7 START sql view model `dwh`.`dwh_bank_stocks` ............................ [RUN]
+[0m15:06:27.397320 [info ] [Thread-4  ]: 4 of 7 START sql view model `dwh`.`dwh_daily_stocks_prices` .................... [RUN]
+[0m15:06:27.399374 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list__dwh, now model.dbt_project.dwh_bank_basic_info)
+[0m15:06:27.401340 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly list_, now model.dbt_project.dwh_bank_fundamentals)
+[0m15:06:27.403267 [debug] [Thread-3  ]: Acquiring new clickhouse connection 'model.dbt_project.dwh_bank_stocks'
+[0m15:06:27.404799 [debug] [Thread-4  ]: Acquiring new clickhouse connection 'model.dbt_project.dwh_daily_stocks_prices'
+[0m15:06:27.406353 [debug] [Thread-1  ]: Began compiling node model.dbt_project.dwh_bank_basic_info
+[0m15:06:27.408195 [debug] [Thread-2  ]: Began compiling node model.dbt_project.dwh_bank_fundamentals
+[0m15:06:27.409892 [debug] [Thread-3  ]: Began compiling node model.dbt_project.dwh_bank_stocks
+[0m15:06:27.411957 [debug] [Thread-4  ]: Began compiling node model.dbt_project.dwh_daily_stocks_prices
+[0m15:06:27.425065 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_project.dwh_bank_basic_info"
+[0m15:06:27.429371 [debug] [Thread-2  ]: Writing injected SQL for node "model.dbt_project.dwh_bank_fundamentals"
+[0m15:06:27.433167 [debug] [Thread-3  ]: Writing injected SQL for node "model.dbt_project.dwh_bank_stocks"
+[0m15:06:27.438072 [debug] [Thread-4  ]: Writing injected SQL for node "model.dbt_project.dwh_daily_stocks_prices"
+[0m15:06:27.440805 [debug] [Thread-1  ]: Began executing node model.dbt_project.dwh_bank_basic_info
+[0m15:06:27.441618 [debug] [Thread-2  ]: Began executing node model.dbt_project.dwh_bank_fundamentals
+[0m15:06:27.448176 [debug] [Thread-3  ]: Began executing node model.dbt_project.dwh_bank_stocks
+[0m15:06:27.475258 [debug] [Thread-4  ]: Began executing node model.dbt_project.dwh_daily_stocks_prices
+[0m15:06:27.553882 [debug] [Thread-2  ]: Writing runtime sql for node "model.dbt_project.dwh_bank_fundamentals"
+[0m15:06:27.557713 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_project.dwh_bank_basic_info"
+[0m15:06:27.572547 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+[0m15:06:27.574449 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+[0m15:06:27.596287 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_bank_basic_info: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_bank_basic_info"} */
+
+
+  create view `dwh`.`dwh_bank_basic_info__dbt_tmp` 
+  
+    
+    
+  as (
+    SELECT
+    JSONExtract(_airbyte_data, 'symbol', 'String') AS symbol,
+    JSONExtract(_airbyte_data, 'company_name', 'String') AS company_name,
+    JSONExtract(_airbyte_data, 'industry', 'String') AS industry,
+    JSONExtract(_airbyte_data, 'sector', 'String') AS sector,
+    JSONExtract(_airbyte_data, 'employee_count', 'Int32') AS employee_count,
+    JSONExtract(_airbyte_data, 'city', 'String') AS city,
+    JSONExtract(_airbyte_data, 'phone', 'String') AS phone,
+    JSONExtract(_airbyte_data, 'state', 'String') AS state,
+    JSONExtract(_airbyte_data, 'country', 'String') AS country,
+    JSONExtract(_airbyte_data, 'website', 'String') AS website,
+    JSONExtract(_airbyte_data, 'address', 'String') AS address,
+    parseDateTimeBestEffort(JSONExtract(_airbyte_data, 'created_at', 'String')) AS created_at,
+    parseDateTimeBestEffort(JSONExtract(_airbyte_data, 'updated_at', 'String')) AS updated_at,
+    _airbyte_extracted_at
+FROM stage.public_raw__stream_bank_basic_info
+    
+  )
+      
+      
+                    -- end_of_sql
+                    
+                    ...
+[0m15:06:27.600401 [debug] [Thread-2  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_bank_fundamentals: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_bank_fundamentals"} */
+
+
+  create view `dwh`.`dwh_bank_fundamentals__dbt_tmp` 
+  
+    
+    
+  as (
+    SELECT
+    JSONExtract(_airbyte_data, 'symbol', 'String') AS symbol,
+    JSONExtract(_airbyte_data, 'assets', 'Float64') AS assets,
+    JSONExtract(_airbyte_data, 'debt', 'Float64') AS debt,
+    JSONExtract(_airbyte_data, 'invested_capital', 'Float64') AS invested_capital,
+    JSONExtract(_airbyte_data, 'shares_issued', 'Float64') AS shares_issued,
+    parseDateTimeBestEffort(JSONExtract(_airbyte_data, 'created_at', 'String')) AS created_at,
+    parseDateTimeBestEffort(JSONExtract(_airbyte_data, 'updated_at', 'String')) AS updated_at,
+    _airbyte_extracted_at
+FROM stage.public_raw__stream_bank_fundamentals
+    
+  )
+      
+      
+                    -- end_of_sql
+                    
+                    ...
+[0m15:06:27.633805 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.02 seconds
+[0m15:06:27.634953 [debug] [Thread-2  ]: dbt_clickhouse adapter: SQL status: OK in 0.02 seconds
+[0m15:06:27.693185 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_bank_basic_info: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_bank_basic_info"} */
+
+    drop table if exists `dwh`.`dwh_bank_basic_info__dbt_backup` 
+  
+  ...
+[0m15:06:27.699701 [debug] [Thread-2  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_bank_fundamentals: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_bank_fundamentals"} */
+
+    drop table if exists `dwh`.`dwh_bank_fundamentals__dbt_backup` 
+  
+  ...
+[0m15:06:27.708018 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m15:06:27.714713 [debug] [Thread-3  ]: Writing runtime sql for node "model.dbt_project.dwh_bank_stocks"
+[0m15:06:27.717759 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_bank_basic_info: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_bank_basic_info"} */
+
+    rename table `dwh`.`dwh_bank_basic_info` to `dwh`.`dwh_bank_basic_info__dbt_backup` 
+  
+  ...
+[0m15:06:27.719502 [debug] [Thread-2  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:27.727253 [debug] [Thread-2  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_bank_fundamentals: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_bank_fundamentals"} */
+
+    rename table `dwh`.`dwh_bank_fundamentals` to `dwh`.`dwh_bank_fundamentals__dbt_backup` 
+  
+  ...
+[0m15:06:27.728141 [debug] [Thread-3  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_bank_stocks: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_bank_stocks"} */
+
+
+  create view `dwh`.`dwh_bank_stocks__dbt_tmp` 
+  
+    
+    
+  as (
+    SELECT
+    JSONExtract(_airbyte_data, 'symbol', 'String') AS symbol,
+    JSONExtract(_airbyte_data, 'company_name', 'String') AS company_name,
+    JSONExtract(_airbyte_data, 'last_price', 'Float64') AS last_price,
+    JSONExtract(_airbyte_data, 'change', 'Float64') AS change,
+    JSONExtract(_airbyte_data, '%_change', 'String') AS percentage_change,
+    parseDateTimeBestEffort(JSONExtract(_airbyte_data, 'market_time', 'String')) AS market_time,
+    JSONExtract(_airbyte_data, 'volume', 'String') AS volume,
+    JSONExtract(_airbyte_data, 'avg_vol_3_month', 'String') AS avg_vol_3_month,
+    JSONExtract(_airbyte_data, 'market_cap', 'String') AS market_cap,
+    _airbyte_extracted_at
+FROM stage.public_raw__stream_banks_stocks
+    
+  )
+      
+      
+                    -- end_of_sql
+                    
+                    ...
+[0m15:06:27.729216 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:27.732967 [debug] [Thread-4  ]: Writing runtime sql for node "model.dbt_project.dwh_daily_stocks_prices"
+[0m15:06:27.734355 [debug] [Thread-2  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m15:06:27.742326 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_bank_basic_info: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_bank_basic_info"} */
+
+    drop table if exists `dwh`.`dwh_bank_basic_info` 
+  
+  ...
+[0m15:06:27.743989 [debug] [Thread-3  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:27.760611 [debug] [Thread-2  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_bank_fundamentals: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_bank_fundamentals"} */
+
+    drop table if exists `dwh`.`dwh_bank_fundamentals` 
+  
+  ...
+[0m15:06:27.764458 [debug] [Thread-4  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_daily_stocks_prices: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_daily_stocks_prices"} */
+
+
+  create view `dwh`.`dwh_daily_stocks_prices__dbt_tmp` 
+  
+    
+    
+  as (
+    SELECT
+    JSONExtract(_airbyte_data, 'symbol', 'String') AS symbol,
+    parseDateTimeBestEffort(JSONExtract(_airbyte_data, 'date', 'String')) AS date,
+    JSONExtract(_airbyte_data, 'open', 'Float64') AS open,
+    JSONExtract(_airbyte_data, 'high', 'Float64') AS high,
+    JSONExtract(_airbyte_data, 'low', 'Float64') AS low,
+    JSONExtract(_airbyte_data, 'close', 'Float64') AS close,
+    JSONExtract(_airbyte_data, 'volume', 'Float64') AS volume,
+    JSONExtract(_airbyte_data, 'dividends', 'Float64') AS dividends,
+    JSONExtract(_airbyte_data, 'stock_splits', 'Float64') AS stock_splits,
+    parseDateTimeBestEffort(JSONExtract(_airbyte_data, 'created_at', 'String')) AS created_at,
+    parseDateTimeBestEffort(JSONExtract(_airbyte_data, 'updated_at', 'String')) AS updated_at,
+    _airbyte_extracted_at
+FROM stage.public_raw__stream_daily_stocks_prices
+    
+  )
+      
+      
+                    -- end_of_sql
+                    
+                    ...
+[0m15:06:27.775306 [debug] [Thread-3  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_bank_stocks: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_bank_stocks"} */
+
+    drop table if exists `dwh`.`dwh_bank_stocks__dbt_backup` 
+  
+  ...
+[0m15:06:27.776790 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:27.781800 [debug] [Thread-2  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m15:06:27.788119 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_bank_basic_info: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_bank_basic_info"} */
+
+    rename table `dwh`.`dwh_bank_basic_info__dbt_tmp` to `dwh`.`dwh_bank_basic_info` 
+  
+  ...
+[0m15:06:27.790739 [debug] [Thread-4  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:27.792922 [debug] [Thread-3  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:27.796452 [debug] [Thread-2  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_bank_fundamentals: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_bank_fundamentals"} */
+
+    rename table `dwh`.`dwh_bank_fundamentals__dbt_tmp` to `dwh`.`dwh_bank_fundamentals` 
+  
+  ...
+[0m15:06:27.806808 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:27.805524 [debug] [Thread-4  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_daily_stocks_prices: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_daily_stocks_prices"} */
+
+    drop table if exists `dwh`.`dwh_daily_stocks_prices__dbt_backup` 
+  
+  ...
+[0m15:06:27.810007 [debug] [Thread-3  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_bank_stocks: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_bank_stocks"} */
+
+    rename table `dwh`.`dwh_bank_stocks` to `dwh`.`dwh_bank_stocks__dbt_backup` 
+  
+  ...
+[0m15:06:27.845296 [debug] [Thread-4  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:27.860558 [debug] [Thread-2  ]: dbt_clickhouse adapter: SQL status: OK in 0.05 seconds
+[0m15:06:27.891174 [debug] [Thread-4  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_daily_stocks_prices: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_daily_stocks_prices"} */
+
+    rename table `dwh`.`dwh_daily_stocks_prices` to `dwh`.`dwh_daily_stocks_prices__dbt_backup` 
+  
+  ...
+[0m15:06:27.893199 [debug] [Thread-3  ]: dbt_clickhouse adapter: SQL status: OK in 0.02 seconds
+[0m15:06:27.922641 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_bank_basic_info: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_bank_basic_info"} */
+
+    drop table if exists `dwh`.`dwh_bank_basic_info__dbt_backup` 
+  ...
+[0m15:06:27.925217 [debug] [Thread-2  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_bank_fundamentals: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_bank_fundamentals"} */
+
+    drop table if exists `dwh`.`dwh_bank_fundamentals__dbt_backup` 
+  ...
+[0m15:06:27.932379 [debug] [Thread-4  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:27.939688 [debug] [Thread-3  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_bank_stocks: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_bank_stocks"} */
+
+    drop table if exists `dwh`.`dwh_bank_stocks` 
+  
+  ...
+[0m15:06:27.951932 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:27.966476 [debug] [Thread-4  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_daily_stocks_prices: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_daily_stocks_prices"} */
+
+    drop table if exists `dwh`.`dwh_daily_stocks_prices` 
+  
+  ...
+[0m15:06:27.968697 [debug] [Thread-2  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:27.980795 [debug] [Thread-3  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:27.979034 [info ] [Thread-1  ]: 1 of 7 OK created sql view model `dwh`.`dwh_bank_basic_info` ................... [[32mOK[0m in 0.58s]
+[0m15:06:27.985429 [info ] [Thread-2  ]: 2 of 7 OK created sql view model `dwh`.`dwh_bank_fundamentals` ................. [[32mOK[0m in 0.58s]
+[0m15:06:27.986807 [debug] [Thread-4  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m15:06:27.989038 [debug] [Thread-3  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_bank_stocks: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_bank_stocks"} */
+
+    rename table `dwh`.`dwh_bank_stocks__dbt_tmp` to `dwh`.`dwh_bank_stocks` 
+  
+  ...
+[0m15:06:27.990654 [debug] [Thread-1  ]: Finished running node model.dbt_project.dwh_bank_basic_info
+[0m15:06:27.992128 [debug] [Thread-2  ]: Finished running node model.dbt_project.dwh_bank_fundamentals
+[0m15:06:27.994334 [debug] [Thread-4  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_daily_stocks_prices: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_daily_stocks_prices"} */
+
+    rename table `dwh`.`dwh_daily_stocks_prices__dbt_tmp` to `dwh`.`dwh_daily_stocks_prices` 
+  
+  ...
+[0m15:06:27.996992 [debug] [Thread-1  ]: Began running node model.dbt_project.dwh_stock_calificadores
+[0m15:06:27.998475 [debug] [Thread-3  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m15:06:27.999809 [debug] [Thread-2  ]: Began running node model.dbt_project.dwh_stock_holders
+[0m15:06:28.006523 [info ] [Thread-1  ]: 5 of 7 START sql view model `dwh`.`dwh_stock_calificadores` .................... [RUN]
+[0m15:06:28.008869 [debug] [Thread-4  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m15:06:28.023855 [debug] [Thread-3  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_bank_stocks: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_bank_stocks"} */
+
+    drop table if exists `dwh`.`dwh_bank_stocks__dbt_backup` 
+  ...
+[0m15:06:28.026338 [info ] [Thread-2  ]: 6 of 7 START sql view model `dwh`.`dwh_stock_holders` .......................... [RUN]
+[0m15:06:28.028721 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_project.dwh_bank_basic_info, now model.dbt_project.dwh_stock_calificadores)
+[0m15:06:28.040558 [debug] [Thread-4  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_daily_stocks_prices: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_daily_stocks_prices"} */
+
+    drop table if exists `dwh`.`dwh_daily_stocks_prices__dbt_backup` 
+  ...
+[0m15:06:28.043390 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly model.dbt_project.dwh_bank_fundamentals, now model.dbt_project.dwh_stock_holders)
+[0m15:06:28.047887 [debug] [Thread-2  ]: Began compiling node model.dbt_project.dwh_stock_holders
+[0m15:06:28.045786 [debug] [Thread-1  ]: Began compiling node model.dbt_project.dwh_stock_calificadores
+[0m15:06:28.044823 [debug] [Thread-3  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m15:06:28.049137 [debug] [Thread-4  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m15:06:28.052933 [debug] [Thread-2  ]: Writing injected SQL for node "model.dbt_project.dwh_stock_holders"
+[0m15:06:28.056708 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_project.dwh_stock_calificadores"
+[0m15:06:28.061412 [info ] [Thread-3  ]: 3 of 7 OK created sql view model `dwh`.`dwh_bank_stocks` ....................... [[32mOK[0m in 0.66s]
+[0m15:06:28.065463 [info ] [Thread-4  ]: 4 of 7 OK created sql view model `dwh`.`dwh_daily_stocks_prices` ............... [[32mOK[0m in 0.66s]
+[0m15:06:28.067980 [debug] [Thread-3  ]: Finished running node model.dbt_project.dwh_bank_stocks
+[0m15:06:28.069142 [debug] [Thread-2  ]: Began executing node model.dbt_project.dwh_stock_holders
+[0m15:06:28.070330 [debug] [Thread-4  ]: Finished running node model.dbt_project.dwh_daily_stocks_prices
+[0m15:06:28.071196 [debug] [Thread-1  ]: Began executing node model.dbt_project.dwh_stock_calificadores
+[0m15:06:28.079436 [debug] [Thread-2  ]: Writing runtime sql for node "model.dbt_project.dwh_stock_holders"
+[0m15:06:28.081697 [debug] [Thread-3  ]: Began running node model.dbt_project.vw_monthly_stock_summary
+[0m15:06:28.088859 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_project.dwh_stock_calificadores"
+[0m15:06:28.090967 [info ] [Thread-3  ]: 7 of 7 START sql view model `dwh`.`vw_monthly_stock_summary` ................... [RUN]
+[0m15:06:28.092587 [debug] [Thread-2  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_stock_holders: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_stock_holders"} */
+
+
+  create view `dwh`.`dwh_stock_holders__dbt_tmp` 
+  
+    
+    
+  as (
+    SELECT
+    JSONExtract(_airbyte_data, 'symbol', 'String') AS symbol,
+    parseDateTimeBestEffort(JSONExtract(_airbyte_data, 'date_reported', 'String')) AS date_reported,
+    JSONExtract(_airbyte_data, 'holder', 'String') AS holder,
+    JSONExtract(_airbyte_data, 'shares', 'Int64') AS shares,
+    JSONExtract(_airbyte_data, 'value', 'Float64') AS value,
+    parseDateTimeBestEffort(JSONExtract(_airbyte_data, 'created_at', 'String')) AS created_at,
+    parseDateTimeBestEffort(JSONExtract(_airbyte_data, 'updated_at', 'String')) AS updated_at,
+    _airbyte_extracted_at
+FROM stage.public_raw__stream_stock_holders
+    
+  )
+      
+      
+                    -- end_of_sql
+                    
+                    ...
+[0m15:06:28.094046 [debug] [Thread-3  ]: Re-using an available connection from the pool (formerly model.dbt_project.dwh_bank_stocks, now model.dbt_project.vw_monthly_stock_summary)
+[0m15:06:28.096518 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_stock_calificadores: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_stock_calificadores"} */
+
+
+  create view `dwh`.`dwh_stock_calificadores__dbt_tmp` 
+  
+    
+    
+  as (
+    SELECT
+    JSONExtract(_airbyte_data, 'symbol', 'String') AS symbol,
+    parseDateTimeBestEffort(JSONExtract(_airbyte_data, 'gradedate', 'String')) AS gradedate,
+    JSONExtract(_airbyte_data, 'firm', 'String') AS firm,
+    JSONExtract(_airbyte_data, 'tograde', 'String') AS tograde,
+    JSONExtract(_airbyte_data, 'fromgrade', 'String') AS fromgrade,
+    JSONExtract(_airbyte_data, 'action', 'String') AS action,
+    parseDateTimeBestEffort(JSONExtract(_airbyte_data, 'created_at', 'String')) AS created_at,
+    parseDateTimeBestEffort(JSONExtract(_airbyte_data, 'updated_at', 'String')) AS updated_at,
+    _airbyte_extracted_at
+FROM stage.public_raw__stream_stocks_calificadores
+    
+  )
+      
+      
+                    -- end_of_sql
+                    
+                    ...
+[0m15:06:28.097745 [debug] [Thread-3  ]: Began compiling node model.dbt_project.vw_monthly_stock_summary
+[0m15:06:28.108023 [debug] [Thread-2  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:28.109578 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:28.111546 [debug] [Thread-3  ]: Writing injected SQL for node "model.dbt_project.vw_monthly_stock_summary"
+[0m15:06:28.119848 [debug] [Thread-2  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_stock_holders: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_stock_holders"} */
+
+    drop table if exists `dwh`.`dwh_stock_holders__dbt_backup` 
+  
+  ...
+[0m15:06:28.127079 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_stock_calificadores: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_stock_calificadores"} */
+
+    drop table if exists `dwh`.`dwh_stock_calificadores__dbt_backup` 
+  
+  ...
+[0m15:06:28.132174 [debug] [Thread-2  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m15:06:28.133353 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m15:06:28.134633 [debug] [Thread-3  ]: Began executing node model.dbt_project.vw_monthly_stock_summary
+[0m15:06:28.136737 [debug] [Thread-2  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_stock_holders: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_stock_holders"} */
+
+    rename table `dwh`.`dwh_stock_holders` to `dwh`.`dwh_stock_holders__dbt_backup` 
+  
+  ...
+[0m15:06:28.139330 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_stock_calificadores: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_stock_calificadores"} */
+
+    rename table `dwh`.`dwh_stock_calificadores` to `dwh`.`dwh_stock_calificadores__dbt_backup` 
+  
+  ...
+[0m15:06:28.147254 [debug] [Thread-3  ]: Writing runtime sql for node "model.dbt_project.vw_monthly_stock_summary"
+[0m15:06:28.152305 [debug] [Thread-2  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m15:06:28.157065 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m15:06:28.176164 [debug] [Thread-2  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_stock_holders: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_stock_holders"} */
+
+    drop table if exists `dwh`.`dwh_stock_holders` 
+  
+  ...
+[0m15:06:28.179456 [debug] [Thread-3  ]: dbt_clickhouse adapter: On model.dbt_project.vw_monthly_stock_summary: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.vw_monthly_stock_summary"} */
+
+
+  create view `dwh`.`vw_monthly_stock_summary__dbt_tmp` 
+  
+    
+    
+  as (
+    WITH daily_data AS (
+    SELECT 
+        symbol,
+        toMonth(date) AS month,
+        ROUND(AVG(open), 2) AS avg_open,
+        ROUND(AVG(close), 2) AS avg_close,
+        ROUND(AVG(volume), 2) AS avg_volume
+    FROM 
+         `dwh`.`dwh_daily_stocks_prices`
+    GROUP BY 
+        symbol, month
+    ORDER BY 
+        symbol, month
+)
+
+SELECT 
+    symbol,
+    month,
+    avg_open,
+    avg_close,
+    avg_volume
+FROM 
+    daily_data
+ORDER BY 
+    month, symbol
+    
+  )
+      
+      
+                    -- end_of_sql
+                    
+                    ...
+[0m15:06:28.192313 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_stock_calificadores: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_stock_calificadores"} */
+
+    drop table if exists `dwh`.`dwh_stock_calificadores` 
+  
+  ...
+[0m15:06:28.204304 [debug] [Thread-2  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:28.266977 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:28.257367 [debug] [Thread-2  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_stock_holders: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_stock_holders"} */
+
+    rename table `dwh`.`dwh_stock_holders__dbt_tmp` to `dwh`.`dwh_stock_holders` 
+  
+  ...
+[0m15:06:28.275961 [debug] [Thread-3  ]: dbt_clickhouse adapter: SQL status: OK in 0.06 seconds
+[0m15:06:28.385095 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_stock_calificadores: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_stock_calificadores"} */
+
+    rename table `dwh`.`dwh_stock_calificadores__dbt_tmp` to `dwh`.`dwh_stock_calificadores` 
+  
+  ...
+[0m15:06:28.480014 [debug] [Thread-2  ]: dbt_clickhouse adapter: SQL status: OK in 0.08 seconds
+[0m15:06:28.482396 [debug] [Thread-3  ]: dbt_clickhouse adapter: On model.dbt_project.vw_monthly_stock_summary: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.vw_monthly_stock_summary"} */
+
+    drop table if exists `dwh`.`vw_monthly_stock_summary__dbt_backup` 
+  
+  ...
+[0m15:06:28.497444 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:28.517891 [debug] [Thread-2  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_stock_holders: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_stock_holders"} */
+
+    drop table if exists `dwh`.`dwh_stock_holders__dbt_backup` 
+  ...
+[0m15:06:28.533927 [debug] [Thread-3  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:28.545844 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.dbt_project.dwh_stock_calificadores: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.dwh_stock_calificadores"} */
+
+    drop table if exists `dwh`.`dwh_stock_calificadores__dbt_backup` 
+  ...
+[0m15:06:28.556189 [debug] [Thread-2  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:28.561803 [debug] [Thread-3  ]: dbt_clickhouse adapter: On model.dbt_project.vw_monthly_stock_summary: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.vw_monthly_stock_summary"} */
+
+    rename table `dwh`.`vw_monthly_stock_summary` to `dwh`.`vw_monthly_stock_summary__dbt_backup` 
+  
+  ...
+[0m15:06:28.575230 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m15:06:28.581238 [info ] [Thread-2  ]: 6 of 7 OK created sql view model `dwh`.`dwh_stock_holders` ..................... [[32mOK[0m in 0.54s]
+[0m15:06:28.596223 [info ] [Thread-1  ]: 5 of 7 OK created sql view model `dwh`.`dwh_stock_calificadores` ............... [[32mOK[0m in 0.57s]
+[0m15:06:28.603296 [debug] [Thread-3  ]: dbt_clickhouse adapter: SQL status: OK in 0.02 seconds
+[0m15:06:28.619567 [debug] [Thread-2  ]: Finished running node model.dbt_project.dwh_stock_holders
+[0m15:06:28.627301 [debug] [Thread-1  ]: Finished running node model.dbt_project.dwh_stock_calificadores
+[0m15:06:28.639285 [debug] [Thread-3  ]: dbt_clickhouse adapter: On model.dbt_project.vw_monthly_stock_summary: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.vw_monthly_stock_summary"} */
+
+    drop table if exists `dwh`.`vw_monthly_stock_summary` 
+  
+  ...
+[0m15:06:28.646861 [debug] [Thread-3  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m15:06:28.651550 [debug] [Thread-3  ]: dbt_clickhouse adapter: On model.dbt_project.vw_monthly_stock_summary: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.vw_monthly_stock_summary"} */
+
+    rename table `dwh`.`vw_monthly_stock_summary__dbt_tmp` to `dwh`.`vw_monthly_stock_summary` 
+  
+  ...
+[0m15:06:28.657566 [debug] [Thread-3  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m15:06:28.671090 [debug] [Thread-3  ]: dbt_clickhouse adapter: On model.dbt_project.vw_monthly_stock_summary: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.vw_monthly_stock_summary"} */
+
+    drop table if exists `dwh`.`vw_monthly_stock_summary__dbt_backup` 
+  ...
+[0m15:06:28.677999 [debug] [Thread-3  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m15:06:28.686361 [info ] [Thread-3  ]: 7 of 7 OK created sql view model `dwh`.`vw_monthly_stock_summary` .............. [[32mOK[0m in 0.59s]
+[0m15:06:28.689454 [debug] [Thread-3  ]: Finished running node model.dbt_project.vw_monthly_stock_summary
+[0m15:06:28.699935 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:06:28.701961 [debug] [MainThread]: Connection 'model.dbt_project.dwh_stock_holders' was left open.
+[0m15:06:28.703690 [debug] [MainThread]: On model.dbt_project.dwh_stock_holders: Close
+[0m15:06:28.705181 [debug] [MainThread]: Connection 'model.dbt_project.dwh_stock_calificadores' was left open.
+[0m15:06:28.706707 [debug] [MainThread]: On model.dbt_project.dwh_stock_calificadores: Close
+[0m15:06:28.707901 [debug] [MainThread]: Connection 'model.dbt_project.vw_monthly_stock_summary' was left open.
+[0m15:06:28.709412 [debug] [MainThread]: On model.dbt_project.vw_monthly_stock_summary: Close
+[0m15:06:28.711582 [debug] [MainThread]: Connection 'model.dbt_project.dwh_daily_stocks_prices' was left open.
+[0m15:06:28.713000 [debug] [MainThread]: On model.dbt_project.dwh_daily_stocks_prices: Close
+[0m15:06:28.716718 [info ] [MainThread]: 
+[0m15:06:28.718393 [info ] [MainThread]: Finished running 7 view models in 0 hours 0 minutes and 2.52 seconds (2.52s).
+[0m15:06:28.722432 [debug] [MainThread]: Command end result
+[0m15:06:28.858995 [info ] [MainThread]: 
+[0m15:06:28.862342 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:06:28.864462 [info ] [MainThread]: 
+[0m15:06:28.869525 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=0 SKIP=0 TOTAL=7
+[0m15:06:28.886306 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 3.7742548, "process_user_time": 5.661199, "process_kernel_time": 2.162879, "process_mem_max_rss": "314136", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:06:28.891700 [debug] [MainThread]: Command `dbt run` succeeded at 15:06:28.891090 after 3.78 seconds
+[0m15:06:28.893458 [debug] [MainThread]: Flushing usage events
