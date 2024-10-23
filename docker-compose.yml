@@ -79,7 +79,10 @@ services:
         soft: 262144
         hard: 262144
     environment:
-      - DATABASE_NAME=dwh
+      - DATABASE_NAME=${DATABASE_NAME}
+      - CLICKHOUSE_PASSWORD=${CLICKHOUSE_PASSWORD}
+    env_file:
+      - .env
     depends_on:
       - postgres-db
     networks:

@@ -29,7 +29,7 @@ host = os.getenv("DB_HOST", "postgres-db")
 database = os.getenv("POSTGRES_DB", "landing_zone")      
 user = os.getenv("POSTGRES_USER", "sib_user")        
 password = os.getenv("POSTGRES_PASSWORD", "sib_user") 
-port = os.getenv("POSTGRES_PORT", "5432")        
+port = os.getenv("POSTGRES_PORT", 5432)        
 AIRBYTE_CONN_ID=os.getenv("AIRBYTE_CONNECTION_ID", "8bf4a1bc-7071-4b67-8d55-4b5be1484508")
 ENGINE_DB = f'postgresql://{user}:{password}@{host}:{port}/{database}'
 
@@ -136,35 +136,3 @@ with DAG(
                         extract_save_holders_info,
                         extract_save_calificadores_info
     ] >> send_to_datawarehouse >> dbt_test >> dbt_run
-
-
-    # dbt_run = DbtDag(
-    #     project_config=ProjectConfig(
-    #         "/home/dbt"
-    #     ),
-    #     profile_config=ProfileConfig(
-    #         profile_name="dbt_project",
-    #         target_name="dev",
-    #         profile_mapping=ClickhouseUserPasswordProfileMapping(
-    #             conn_id="clickhouse_conn_id",
-    #             profile_args={
-    #                 "host": "clickhouse",
-    #                 "user": "default",
-    #                 "password": "",
-    #                 "database": "stage",
-    #                 "port": 8123,
-    #                 "clickhouse": True
-    #             }
-    #         ),
-    #     ),
-    #     operator_args={
-    #         "install_deps": True,  
-    #         "full_refresh": True, 
-    #     },
-    #     # normal dag parameters
-    #     start_date=datetime(2024, 1, 1),
-    #     catchup=False,
-    #     dag_id="dbt_run",
-    #     default_args={"retries": 2},
-    # )
-
