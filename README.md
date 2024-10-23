@@ -9,7 +9,7 @@ Este es el diagrama de la arquitectura del ETL con las tecnologías utilizadas:
 Y este está el diagrama del ETL al final de la implementación desde la vista de grafos del Dag Airflow:
 
 Este es el DAG que ejecuta la extracción y la carga de la data desde el source hasta el stage:
-![ETL Dag](https://github.com/user-attachments/assets/65565df8-8f06-4843-addb-14dc21e7d466)
+![ELT Dag](https://github.com/user-attachments/assets/f7d53a23-bf82-494f-a6cb-5f03ac15934d)
 
 Este es el DAG que ejecuta las transformaciones con DBT cuando hubo algún cambio en el datawarehouse:
 ![DBT jobs](https://github.com/user-attachments/assets/e5f1e019-eb41-4c33-8864-d2612c030cd4)
