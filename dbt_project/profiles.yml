@@ -4,8 +4,8 @@ dbt_project:
       host: clickhouse
       schema: dwh
       user: default
-      password: ""
-      port: 8123
+      password: "{{ env_var('CLICKHOUSE_PASSWORD') }}"
+      port: "{{ env_var('CLICKHOUSE_HTTP_PORT') | int }}"
       threads: 4
       type: clickhouse
   target: dev
