@@ -203,6 +203,10 @@ Esto iniciará el pipeline completo, comenzando con la extracción de la data de
 
 [![Demo Pipeline](https://img.youtube.com/vi/aOJAdJFkF28/0.jpg)](https://www.youtube.com/watch?v=aOJAdJFkF28)
 
+### Posibles errores presentados con Airbyte
+
+Si presenta algún error al descargar el proyecto del git oficial y el proyecto no le corre. Puede clonar [Este Repositorio](https://github.com/gabrielcepedag/sib-airbyte.git) que incluye el proyecto del repositorio de Airbyte y las modificaciones que se mencionan en el acápite 3.
+
 ### Observaciones
 
 Ejecutar Airbyte con docker-compose y el script `run-ab-platform.sh` está deprecado. Lo ideal sería seguir la documentación para ejecutar Airbyte localmente con la nueva integración que hicieron con `abctl`, la cual se puede encontrar en el siguiente enlace [Airbyte Quickstart](https://docs.airbyte.com/using-airbyte/getting-started/oss-quickstart). 
