@@ -1,4 +1,4 @@
-# Construcción de ETL con YFinance, Airbyte, Clickhouse, DBT y Airflow
+# Construcción de Pipeline con YFinance, Airbyte, Clickhouse, DBT y Airflow
 
 Este proyecto tiene como objetivo integrar y validar múltiples fuentes de información sobre bancos que cotizan en la bolsa de valores de los Estados Unidos. Se utiliza un pipeline de datos que incluye la extracción de la información con Yfinance, un entorno de landing zone en PostgreSQL, un almacén OLAP en ClickHouse, herramientas de integración como Airbyte, validación y transformación de datos con DBT, y orquestación del pipeline con Airflow.
 
@@ -79,7 +79,26 @@ Descargue el proyecto en su máquina local siguiendo estos pasos:
    docker network create airbyte_airflow
    ```
 
-   2. Agregar la nueva red en el docker-compose.yml del proyecto de Airbyte como se muestra en adelante:
+## 3. Ejecutar los contenedores
+
+  En esta paso usted puede proceder con la ejecución de los contenedores de ambos proyectos para ello, siga las siguientes instrucciones:
+     
+  1. Correr las demás herramientas:
+
+   ```bash
+    cd sib/
+   ```
+   ```bash
+    docker-compose up -d
+   ```
+
+   2. Este comando descarga el archivo docker-compose.yaml y corre Airbyte. Por lo tanto, primero lo ejecutamos para descargar el archivo:
+
+   ```bash
+    ./airbyte/run-ab-platform.sh
+   ```
+
+   3. Luego, agregamos la nueva red en el docker-compose.yml del proyecto de Airbyte como se muestra en adelante:
    
    ```bash
    networks:
@@ -94,28 +113,10 @@ Descargue el proyecto en su máquina local siguiendo estos pasos:
       networks:
       - airbyte_airflow
    ```
-
-## 3. Ejecutar los contenedores
-
-  En esta paso usted puede proceder con la ejecución de los contenedores de ambos proyectos para ello, siga las siguientes instrucciones:
-
-  1. Correr AirByte:
-
-   ```bash
-    ./airbyte/run-ab-platform.sh
-   ```
-     
-  2. Correr las demás herramientas:
-
-   ```bash
-    cd sib/
-   ```
-   ```bash
-    docker-compose up -d
-   ```
+   
 ## 4. Configurar conector de Airbyte desde la UI
 
-Inicia en la UI de Airbyte accediendo a http://localhost:8000/ en tu navegador. Luego:
+Inicia en la UI de Airbyte accediendo a http://localhost:8000/ en tu navegador. El usuario y contraseña por defecto es airbyte y password. Luego:
 
   1. **Crea una fuente (source)**:
 
@@ -155,10 +156,53 @@ Inicia en la UI de Airbyte accediendo a http://localhost:8000/ en tu navegador. 
 
 Estás listo! Tu conexión está configurada y lista para usarse!🎉 
 
+4. **Copiar Connection-id para poder ejecutar el sync desde Airflow**:
+
+   - En la URL de la conexión copia lo que está luego del path `/connections/`
+   - Pega ese ID en la variable de entorno `AIRBYTE_CONNECTION_ID`
+   - Reinicia el proyecto principal
+
+    ```bash
+    cd sib/
+    docker-compose up down
+    docker-compose up -d
+   ```
+
+## 5. Configurar conector de Airbyte desde la UI en Airflow
+
+Inicia en la UI de Airflow accediendo a http://localhost:8080/ en tu navegador. El usuario y contraseña por defecto es airflow. Luego:
+
+   - Ve al apartado de Conexiones y click en `+ New connection`.
+   - Elige el tipo de conexión de Airbyte
+   - Ajusta los campos con la siguiente guia:
+     
+     ```bash
+       Connection Id = airbyte_conn_id
+       host = airbyte-proxy
+       login = airbyte
+       password = password
+       port = 8001
+     ```
+     
+   - Click en `Save`.
+## 6. Orquestación con Airflow
+
+Ahora que todo está configurado, es tiempo de correr el pipeline!
+
+- En la UI de Airflow, ve al apartado de "DAGs"
+- Localiza `extract_info_banks_stocks` y click en "Trigger DAG".
+
+Esto iniciará el pipeline completo, comenzando con la extracción de la data desde yfinance, almacenando esa data en PostgreSQL, luego ejecutando el proceso de `sync` de Airbyte para transportar la data cruda desde Postgres a Clickhouse. Y por último, corriendo las validaciones y transformaciones con DBT para tener como resultado la data para ser utilizada por los analistas.
+
+- Confirma el estado de la sincronización en Airbyte.
+- Luego de que el job `send_to_datawarehouse` se ejecute, puedes observar la data en clickhouse en el esquema definido en la conexión del destino. Si no definiste esquema estará en el esquema `_airbyte_internal_`.
+- Una vez que el proceso anterior se complete, se ejecutará un trigger que ejecutará el DAG `execute_dbt_jobs`. Este es el encargado de ejecutar las validaciones y transformaciones de los datos en stage.
+- Cuando el proceso anterior culmine, puedes observar en la base de datos de clickhouse en el esquema `dwh` estarán los modelos y vistas creadas con DBT.
 
 
+# Demo visual en Youtube
 
-
+[![Demo Pipeline](https://img.youtube.com/vi/aOJAdJFkF28/0.jpg)](https://www.youtube.com/watch?v=aOJAdJFkF28)
 
 
 
