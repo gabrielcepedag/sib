@@ -199,13 +199,19 @@ Esto iniciará el pipeline completo, comenzando con la extracción de la data de
 - Una vez que el proceso anterior se complete, se ejecutará un trigger que ejecutará el DAG `execute_dbt_jobs`. Este es el encargado de ejecutar las validaciones y transformaciones de los datos en stage.
 - Cuando el proceso anterior culmine, puedes observar en la base de datos de clickhouse en el esquema `dwh` estarán los modelos y vistas creadas con DBT.
 
-
 # Demo visual en Youtube
 
 [![Demo Pipeline](https://img.youtube.com/vi/aOJAdJFkF28/0.jpg)](https://www.youtube.com/watch?v=aOJAdJFkF28)
 
+### Observaciones
+
+Ejecutar Airbyte con docker-compose y el script `run-ab-platform.sh` está deprecado. Lo ideal sería seguir la documentación para ejecutar Airbyte localmente con la nueva integración que hicieron con `abctl`, la cual se puede encontrar en el siguiente enlace [Airbyte Quickstart](https://docs.airbyte.com/using-airbyte/getting-started/oss-quickstart). 
+
+Sin embargo, estuve presentando muchos problemas al intentar hacerlo con este último mencionado e investigando encontré que es un bug que aún siguen investigando y que todavía no tienen solución. El screenshot del problema es el siguiente:
+
+<img width="873" alt="Screenshot 2024-10-19 at 5 32 41 PM" src="https://github.com/user-attachments/assets/a739c067-a2dc-4eb6-ab98-2d1b7989e53f">
 
 
-
+Más información sobre el ticket del issue [Aquí](https://docs.airbyte.com/deploying-airbyte/troubleshoot-deploy#failed-to-init-node-with-kubeadm)
 
 
